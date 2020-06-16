@@ -1,1 +1,1 @@
-{"trim": "", "base": "8732c0513", "trimbase": "", "parent": "debian/foxy/swri_math_util", "previous": "33dab4310"}
+{"base": "086db8b55", "parent": "debian/rolling/swri_math_util", "previous": "fbc95605e", "trim": "", "trimbase": ""}
