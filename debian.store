@@ -1,1 +1,1 @@
-{"base": "20524dc11", "parent": "debian/rolling/swri_dbw_interface", "previous": "4a180a5a0", "trim": "", "trimbase": ""}
+{"base": "5b1eb02bd", "parent": "debian/humble/swri_dbw_interface", "previous": "af15e2b51", "trim": "", "trimbase": ""}
