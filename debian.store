@@ -1,1 +1,1 @@
-{"base": "97f965775", "parent": "debian/rolling/swri_geometry_util", "previous": "7f0196cb3", "trim": "", "trimbase": ""}
+{"base": "616c7f800", "parent": "debian/humble/swri_geometry_util", "previous": "889646973", "trim": "", "trimbase": ""}
