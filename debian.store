@@ -1,1 +1,1 @@
-{"base": "8574b850b", "parent": "debian/rolling/swri_opencv_util", "previous": "40067e34a", "trim": "", "trimbase": ""}
+{"base": "ec94556ce", "parent": "debian/humble/swri_opencv_util", "previous": "7e993c68c", "trim": "", "trimbase": ""}
