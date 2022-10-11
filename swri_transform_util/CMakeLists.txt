@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(diagnostic_msgs REQUIRED)
+find_package(diagnostic_updater REQUIRED)
 find_package(geographic_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(gps_msgs REQUIRED)
@@ -50,6 +51,7 @@ add_library(${PROJECT_NAME} SHARED
   src/transformer.cpp
   src/transform_manager.cpp
   src/transform_util.cpp
+  src/tf2_util.cpp
   src/utm_transformer.cpp
   src/wgs84_transformer.cpp)
 target_include_directories(${PROJECT_NAME}
@@ -65,11 +67,16 @@ target_include_directories(${PROJECT_NAME}
 set_property(TARGET ${PROJECT_NAME}
   PROPERTY POSITION_INDEPENDENT_CODE ON)
 target_compile_definitions(${PROJECT_NAME}
-  PRIVATE
+  PUBLIC
     USE_NEW_TF2_TOMSG=${USE_NEW_TF2_TOMSG}
 )
-target_compile_definitions(${PROJECT_NAME} PUBLIC "-DACCEPT_USE_OF_DEPRECATED_PROJ_API_H")
+
+if ("$ENV{ROS_DISTRO}" STRLESS_EQUAL "galactic")
+  target_compile_definitions(${PROJECT_NAME} PUBLIC "-DACCEPT_USE_OF_DEPRECATED_PROJ_API_H")
+endif()
+
 target_link_libraries(${PROJECT_NAME}
+  PUBLIC
   Boost::boost
   Boost::filesystem
   Boost::thread
@@ -82,7 +89,9 @@ target_link_libraries(${PROJECT_NAME}
   yaml-cpp
 )
 ament_target_dependencies(${PROJECT_NAME}
+  PUBLIC
   diagnostic_msgs
+  diagnostic_updater
   geographic_msgs
   geometry_msgs
   gps_msgs
@@ -110,6 +119,28 @@ target_include_directories(${PROJECT_NAME}_nodes
   INTERFACE
   ${PROJ_INCLUDE_DIRS}
 )
+
+set(TF_UTIL_DEFINITIONS "")
+if ("$ENV{ROS_DISTRO}" STRLESS_EQUAL "galactic")
+  set(TF_UTIL_DEFINITIONS "-DUSE_TF2_H_FILES ${TF_UTIL_DEFINITIONS}")
+endif()
+
+if ("$ENV{ROS_DISTRO}" STRGREATER "galactic")
+  set(TF_UTIL_DEFINITIONS "-DUSE_PROJ_API_6 ${TF_UTIL_DEFINITIONS}")
+endif()
+
+# Workaround to https://github.com/ros2/geometry2/pull/427
+if (("$ENV{ROS_DISTRO}" STREQUAL "rolling") OR ("$ENV{ROS_DISTRO}" STREQUAL "humble"))
+  set(TF_UTIL_DEFINITIONS "-DFROM_MSG_WORKAROUND ${TF_UTIL_DEFINITIONS}")
+endif()
+
+target_compile_definitions(${PROJECT_NAME}
+  PUBLIC "${TF_UTIL_DEFINITIONS}"
+  )
+target_compile_definitions(${PROJECT_NAME}_nodes
+  PRIVATE "${TF_UTIL_DEFINITIONS}"
+  )
+
 target_compile_definitions(${PROJECT_NAME}_nodes
   PRIVATE "COMPOSITION_BUILDING_DLL")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_transform_util::DynamicTransformPublisher")
@@ -119,6 +150,8 @@ target_link_libraries(${PROJECT_NAME}_nodes ${PROJECT_NAME})
 ament_target_dependencies(${PROJECT_NAME}_nodes
   marti_nav_msgs
   rcl_interfaces
+  swri_roscpp
+  rclcpp_components
 )
 
 add_executable(lat_lon_tf_echo src/nodes/lat_lon_tf_echo.cpp)
@@ -132,6 +165,11 @@ target_include_directories(lat_lon_tf_echo
   INTERFACE
   ${PROJ_INCLUDE_DIRS}
 )
+
+if ("$ENV{ROS_DISTRO}" STRLESS_EQUAL "galactic")
+  target_compile_definitions(lat_lon_tf_echo PRIVATE "-DUSE_TF2_H_FILES")
+endif()
+
 target_link_libraries(lat_lon_tf_echo ${PROJECT_NAME})
 
 # TODO pjr Convert unit tests
@@ -184,15 +222,16 @@ install(PROGRAMS nodes/initialize_origin.py
 )
 
 ament_python_install_package(${PROJECT_NAME})
-
+ament_export_definitions("${TF_UTIL_DEFINITIONS}")
 ament_export_dependencies(
   ament_cmake
   geographic_msgs
   gps_msgs
+  tf2_geometry_msgs
 )
 ament_export_include_directories(include)
 ament_export_libraries(${PROJECT_NAME}
   ${PROJ_LIBRARIES}
 )
-
 ament_package()
+
