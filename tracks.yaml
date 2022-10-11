@@ -123,12 +123,12 @@ tracks:
     name: upstream
     patches: null
     release_inc: '3'
-    release_repo_url: git@github.com:swri-robotics-gbp/marti_common-release.git
-    release_tag: 3.4.0
+    release_repo_url: https://github.com/ros2-gbp/marti_common-release.git
+    release_tag: 3.5.0
     ros_distro: humble
     vcs_type: git
     vcs_uri: https://github.com/swri-robotics/marti_common.git
-    version: :{auto}
+    version: 3.5.0
   indigo:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
