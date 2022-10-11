@@ -1,0 +1,12 @@
+Source: ros-rolling-swri-opencv-util
+Section: misc
+Priority: optional
+Maintainer: P. J. Reed <preed@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, ros-rolling-ament-cmake, ros-rolling-cv-bridge, ros-rolling-swri-math-util, ros-rolling-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-rolling-swri-opencv-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-rolling-cv-bridge, ros-rolling-swri-math-util, ros-rolling-ros-workspace
+Description: swri_opencv_util
