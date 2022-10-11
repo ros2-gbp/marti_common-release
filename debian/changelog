@@ -1,0 +1,459 @@
+ros-rolling-swri-transform-util (3.5.0-1jammy) jammy; urgency=high
+
+  * Fix ament exports (#693 <https://github.com/swri-robotics/marti_common/issues/693>)
+    * Fix ament exports
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Oct 2022 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.4.2-1jammy) jammy; urgency=high
+
+  * Add Humble Support (#691 <https://github.com/swri-robotics/marti_common/issues/691>)
+    * Adding Humble support based on @shrijitsingh99 PR in https://github.com/swri-robotics/marti_common/pull/685
+  * Contributors: David Anthony, Shrijit Singh
+
+ -- P. J. Reed <preed@swri.org>  Mon, 10 Oct 2022 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.3.2-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 24 Nov 2020 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.3.1-1jammy) jammy; urgency=high
+
+  * Fix bad conversion when 90 degree yaw specified (#599 <https://github.com/swri-robotics/marti_common/issues/599>)
+  * Contributors: Alex Youngs
+
+ -- P. J. Reed <preed@swri.org>  Wed, 19 Aug 2020 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.3.0-1jammy) jammy; urgency=high
+
+  * Add python wgs84 transformer ros2 (#596 <https://github.com/swri-robotics/marti_common/issues/596>)
+  * Improve object transformer to take into account the pose of the object (#589 <https://github.com/swri-robotics/marti_common/issues/589>) (#591 <https://github.com/swri-robotics/marti_common/issues/591>)
+  * Add GitHub Actions for CI (ROS2) (#586 <https://github.com/swri-robotics/marti_common/issues/586>)
+  * Contributors: P. J. Reed, Alex Youngs, Matthew Bries
+
+ -- P. J. Reed <preed@swri.org>  Wed, 15 Jul 2020 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.2.1-1jammy) jammy; urgency=high
+
+  * ROS Foxy support (#582 <https://github.com/swri-robotics/marti_common/issues/582>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Wed, 10 Jun 2020 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.2.0-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 13 May 2020 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.1.0-1jammy) jammy; urgency=high
+
+  * Fix swri_transform_util::TransformManager initialization issues
+  * Implement initialize_origin.py in ROS Eloquent
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Mon, 30 Mar 2020 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.0.5-1jammy) jammy; urgency=high
+
+  * Also add NavSatFix support to swri_transform_util::LocalXyUtil (#569 <https://github.com/swri-robotics/marti_common/issues/569>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 10 Mar 2020 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.0.4-1jammy) jammy; urgency=high
+
+  * ROS 2 Eloquent compatibility (#568 <https://github.com/swri-robotics/marti_common/issues/568>)
+  * Replace boost::array with std::array (#567 <https://github.com/swri-robotics/marti_common/issues/567>)
+  * Fix a crash that happened due to an initialization error (#566 <https://github.com/swri-robotics/marti_common/issues/566>)
+  * Fix TransformManager so it works in ROS2 (#565 <https://github.com/swri-robotics/marti_common/issues/565>)
+  * Port ObstacleTransformer node to ROS2 (#559 <https://github.com/swri-robotics/marti_common/issues/559>)
+  * Remove "nodelets" directory (#558 <https://github.com/swri-robotics/marti_common/issues/558>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Thu, 05 Mar 2020 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.0.3-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.0.2-1jammy) jammy; urgency=high
+
+  * Comment out ament_cmake_gtest (#555 <https://github.com/pjreed/marti_common/issues/555>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.0.1-1jammy) jammy; urgency=high
+
+  * Add missing dependency on Boost::thread to swri_transform_util (#554 <https://github.com/pjreed/marti_common/issues/554>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 00:00:00 -0000
+
+ros-rolling-swri-transform-util (3.0.0-1jammy) jammy; urgency=high
+
+  * ROS2 Dashing conversion (#549 <https://github.com/pjreed/marti_common/issues/549>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Fri, 08 Nov 2019 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.10.0-1jammy) jammy; urgency=high
+
+  * Support in initialize_origin.py specifying custom ROS topic in parameter (#544 <https://github.com/swri-robotics/marti_common/issues/544>)
+  * Fix get relative transform (#546 <https://github.com/swri-robotics/marti_common/issues/546>)
+  * Contributors: Arkady Shapkin, Matthew
+
+ -- P. J. Reed <preed@swri.org>  Wed, 04 Sep 2019 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.9.0-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 23 May 2019 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.8.0-1jammy) jammy; urgency=high
+
+  * Reduce the number of local_xy subscribers from 3 per transform manager to 1 (#537 <https://github.com/swri-robotics/marti_common/issues/537>)
+  * Add dynamic parameters (#532 <https://github.com/swri-robotics/marti_common/issues/532>)
+  * Contributors: Matthew
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Feb 2019 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.7.3-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 03 Jan 2019 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.7.2-1jammy) jammy; urgency=high
+
+  * Fix the unit test that intermittently breaks (#534 <https://github.com/swri-robotics/marti_common/issues/534>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Thu, 20 Dec 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.7.1-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 14 Dec 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.7.0-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 04 Dec 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.6.0-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sat, 03 Nov 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.5.0-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 12 Oct 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.4.0-1jammy) jammy; urgency=high
+
+  * Handle invalid fixes properly (#519 <https://github.com/swri-robotics/marti_common/issues/519>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 09 Oct 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.3.0-1jammy) jammy; urgency=high
+
+  * Initialize transform timestamp to 0 instead of ros::Time::now() (#515 <https://github.com/swri-robotics/marti_common/issues/515>)
+  * Contributors: Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 May 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.2.1-1jammy) jammy; urgency=high
+
+  * Support ROS Melodic (#514 <https://github.com/swri-robotics/marti_common/issues/514>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Fri, 11 May 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.2.0-1jammy) jammy; urgency=high
+
+  * Add gps_transform_publisher. (#509 <https://github.com/swri-robotics/marti_common/issues/509>)
+  * Contributors: Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Mon, 12 Feb 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.1.0-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 26 Jan 2018 00:00:00 -0000
+
+ros-rolling-swri-transform-util (2.0.0-1jammy) jammy; urgency=high
+
+  * expose TransformManager::LocalXyUtil() and LocalXyWgs84Util::ResetInitialization() (#501 <https://github.com/swri-robotics/marti_common/issues/501>)
+  * Complete rewrite of initialize_origin.py (#491 <https://github.com/swri-robotics/marti_common/issues/491>)
+  * Normalize TF frames before comparisons. (#492 <https://github.com/swri-robotics/marti_common/issues/492>)
+  * Add new methods that expose the frame timeout. (#498 <https://github.com/swri-robotics/marti_common/issues/498>)
+  * Use pkgconfig to include libproj in swri_transform_util
+  * Contributors: Davide Faconti, Edward Venator, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Mon, 18 Dec 2017 00:00:00 -0000
+
+ros-rolling-swri-transform-util (1.2.0-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 Oct 2017 00:00:00 -0000
+
+ros-rolling-swri-transform-util (1.1.0-1jammy) jammy; urgency=high
+
+  * Revert "Remove nodelet_plugins.xml from CMakeLists.txt" (#475 <https://github.com/pjreed/marti_common/issues/475>)
+  * Document swri_transform_util (#456 <https://github.com/pjreed/marti_common/issues/456>)
+  * Contributors: Edward Venator, Marc Alban, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Thu, 31 Aug 2017 00:00:00 -0000
+
+ros-rolling-swri-transform-util (1.0.0-1jammy) jammy; urgency=high
+
+  * Increase delay before running tests.
+  * Integrate transformers as static classes instead of plug-ins.
+  * Add inverse transform implementation to transforms. (#464 <https://github.com/evenator/marti_common/issues/464>)
+  * Add tests for initialize_origin.py script (#457 <https://github.com/evenator/marti_common/issues/457>)
+  * Contributors: Edward Venator, Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Wed, 02 Aug 2017 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.3.0-1jammy) jammy; urgency=high
+
+  * Merge together the indigo, jade, and kinetic branches (#443 <https://github.com/pjreed/marti_common/issues/443>)
+  * Fix dynamic reconfigure in dynamic_publisher (closes issue #448 <https://github.com/pjreed/marti_common/issues/448>).
+  * Contributors: Elliot Johnson, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 20 Jun 2017 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.2.4-1jammy) jammy; urgency=high
+
+  * Ignore invalid fixes
+    Fixes #431 <https://github.com/swri-robotics/marti_common/issues/431>.
+  * Remove unused gps_common dependency (#422 <https://github.com/swri-robotics/marti_common/issues/422>)
+    Fix #421 <https://github.com/swri-robotics/marti_common/issues/421> by removing gps_common from the swri_transform_util CMakeLists.txt in kinetic.
+  * Simplify dynamic reconfigure usage.
+  * Add nodelet for publishing a dynamically reconfigurable TF transform.
+  * Contributors: Edward Venator, Marc Alban, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.2.3-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 09 Dec 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.2.2-1jammy) jammy; urgency=high
+
+  * Migrated OpenCV to 3.1 (default in Kinetic)
+  * Contributors: Brian Holt
+
+ -- P. J. Reed <preed@swri.org>  Wed, 07 Dec 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.2.1-1jammy) jammy; urgency=high
+
+  * Improve georeferencing warnings.
+  * Contributors: Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.2.0-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 21 Jun 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.1.5-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.1.4-1jammy) jammy; urgency=high
+
+  * Add great circle distance method for tf::Vector3 type.
+  * Fixed compile error when ros-indigo-opencv3 is installed (#307 <https://github.com/evenator/marti_common/issues/307>)
+  * Contributors: Kim Mathiassen, Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.1.3-1jammy) jammy; urgency=high
+
+  * Fixes initialize_origin.py diagnostic reporting a warning that the
+    origin is not automatic when it is.
+  * Adds transform publisher to initialize_origin.py that publishes an
+    identity transform from the local_xy_frame to an anonymous unused
+    frame.  In doing so, the local_xy_frame will show up
+    in the /tf tree without any additional nodes running so that
+    TransformManager can properly transform between /wgs84 and /map.
+    This change should not interfere with any existing systems.
+  * Expands some of the TransformManager warnings to be more
+    informative.  This is to reduce the impact of common problems that we
+    run into when setting up a new environment by making it easier to
+    distinguish the exact nature of the error, as well as provide
+    suggestions when appropriate.
+    In particular, this fixes the misleading
+    "No transfomer from /wgs84 to /map" error and upgrades a warning
+    about null pointers to an error.
+  * Contributors: Elliot Johnson
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.1.2-1jammy) jammy; urgency=high
+
+  * Account for non-zero reference angles when calculating orientations to and from WGS84.
+  * Support arbitrary local_xy reference angles.
+    * The reference heading has been renamed to reference angle.
+    * It's not recommended to set a non-zero reference angle.
+    * A parameter is provided to ignore the reference heading for backwards compatibility.
+  * Fix backwards compatibility issue with swri_yaml_cpp call.
+  * Contributors: Kris Kozak, Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.1.1-1jammy) jammy; urgency=high
+
+  * Adds a GetTF method to transform_util::Transform.
+  * Installing the initialize_origin.py node.
+  * Add extension type (e.g. png) in geo file
+  * Contributors: Edward Venator, P. J. Reed, Vincent Rousseau
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.1.0-1jammy) jammy; urgency=high
+
+  * Updates lot_lon_tf_echo to use geometry_msgs/PoseStamped.
+    See issue #246 <https://github.com/evenator/marti_common/issues/246>
+  * Removes dependency on gps_common
+    The gps_common package was removed in ROS Jade, so a different message
+    type is needed for the local XY origin message. (Issue #246 <https://github.com/swri-robotics/marti_common/issues/246>).
+    This replaces the gps_common/GPSFix message with a
+    geometry_msgs/PoseStamped message. The latitude is stored in
+    pose.position.y, the longitude is stored in pose.position.x, and the
+    altitude is stored in pose.position.z. As before, the local xy frame is
+    fixed in rotation such that the Z axis points away from the center of
+    the Earth and the Y axis points north. However, the choice of
+    geometry_msgs/PoseStamped allows for headings to be added in the future.
+  * Refactors initialize origin and fixes a bug.
+  * Contributors: Edward Venator
+
+ -- P. J. Reed <preed@swri.org>  Tue, 29 Sep 2015 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.14-1jammy) jammy; urgency=high
+
+  * Merge pull request #435 <https://github.com/swri-robotics/marti_common/issues/435> from swri-robotics/initialize-origin-license
+    Fix whitespace and license in initialize_origin.py
+  * Fix whitespace and license in initialize_origin.py
+    Replace "all rights reserved" with standard BSD 3-clause text and remove trailing whitespace in initialize_origin.py
+  * Fixes #431 <https://github.com/swri-robotics/marti_common/issues/431>
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.13-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.12-1jammy) jammy; urgency=high
+
+  * Add explicit getOrientation function for Utm transformer
+  * Improve georeferencing warnings.
+  * Contributors: Jason Gassaway, Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Sun, 14 Aug 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.11-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.10-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.9-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.8-1jammy) jammy; urgency=high
+
+  * Accounts for non-zero reference angles when calculating orientations to and from WGS84.
+  * Publishes origin with east orientation (0 yaw) by default.
+  * Supports arbitrary local_xy reference angles.
+    * The reference heading is renamed to reference angle.
+    * It's not recommended to set a non-zero reference angle.
+    * Adds a parameter to ignore the reference heading for backwards compatibility.
+  * Fixes backwards compatibility issue with swri_yaml_cpp call.
+  * Contributors: Kris Kozak, Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.7-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 18 Nov 2015 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.6-1jammy) jammy; urgency=high
+
+  * Adds a GetTF method to transform_util::Transform.
+  * Properly installs the initialize_origin.py node.
+  * Add extension type (e.g. png) in geo file
+  * Contributors: Edward Venator, P. J. Reed, Vincent Rousseau
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.5-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.4-1jammy) jammy; urgency=high
+
+  * Fixes missing dependencies. #239 <https://github.com/swri-robotics/marti_common/issues/239>.
+  * Contributors: Ed Venator
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.3-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sat, 26 Sep 2015 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.2-1jammy) jammy; urgency=high
+
+  * Renames yaml_util to swri_yaml_util. Refs #231 <https://github.com/swri-robotics/marti_common/issues/231>.
+  * Renames transform_util to swri_transform_util. Refs #231 <https://github.com/swri-robotics/marti_common/issues/231>.
+  * Contributors: Edward Venator
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 00:00:00 -0000
+
+ros-rolling-swri-transform-util (0.0.1-1jammy) jammy; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 00:00:00 -0000
+
+
