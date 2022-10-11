@@ -1,0 +1,359 @@
+ros-humble-swri-math-util (3.5.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Oct 2022 00:00:00 -0000
+
+ros-humble-swri-math-util (3.4.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 10 Oct 2022 00:00:00 -0000
+
+ros-humble-swri-math-util (3.3.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 24 Nov 2020 00:00:00 -0000
+
+ros-humble-swri-math-util (3.3.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 19 Aug 2020 00:00:00 -0000
+
+ros-humble-swri-math-util (3.3.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 15 Jul 2020 00:00:00 -0000
+
+ros-humble-swri-math-util (3.2.1-1bullseye) bullseye; urgency=high
+
+  * ROS Foxy support (#582 <https://github.com/swri-robotics/marti_common/issues/582>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Wed, 10 Jun 2020 00:00:00 -0000
+
+ros-humble-swri-math-util (3.2.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 13 May 2020 00:00:00 -0000
+
+ros-humble-swri-math-util (3.1.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 30 Mar 2020 00:00:00 -0000
+
+ros-humble-swri-math-util (3.0.5-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 10 Mar 2020 00:00:00 -0000
+
+ros-humble-swri-math-util (3.0.4-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 05 Mar 2020 00:00:00 -0000
+
+ros-humble-swri-math-util (3.0.3-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 00:00:00 -0000
+
+ros-humble-swri-math-util (3.0.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 00:00:00 -0000
+
+ros-humble-swri-math-util (3.0.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 00:00:00 -0000
+
+ros-humble-swri-math-util (3.0.0-1bullseye) bullseye; urgency=high
+
+  * ROS2 Dashing conversion (#549 <https://github.com/pjreed/marti_common/issues/549>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Fri, 08 Nov 2019 00:00:00 -0000
+
+ros-humble-swri-math-util (2.10.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 04 Sep 2019 00:00:00 -0000
+
+ros-humble-swri-math-util (2.9.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 23 May 2019 00:00:00 -0000
+
+ros-humble-swri-math-util (2.8.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Feb 2019 00:00:00 -0000
+
+ros-humble-swri-math-util (2.7.3-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 03 Jan 2019 00:00:00 -0000
+
+ros-humble-swri-math-util (2.7.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 20 Dec 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.7.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 14 Dec 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.7.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 04 Dec 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.6.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sat, 03 Nov 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.5.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 12 Oct 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.4.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 09 Oct 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.3.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 May 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.2.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 11 May 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.2.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 12 Feb 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.1.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 26 Jan 2018 00:00:00 -0000
+
+ros-humble-swri-math-util (2.0.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 18 Dec 2017 00:00:00 -0000
+
+ros-humble-swri-math-util (1.2.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 Oct 2017 00:00:00 -0000
+
+ros-humble-swri-math-util (1.1.0-1bullseye) bullseye; urgency=high
+
+  * Implement RANSAC and least squares model fitting for 3d geometry (#479 <https://github.com/pjreed/marti_common/issues/479>)
+  * Fix out-of-bounds bug in RANSAC sampling. (#477 <https://github.com/pjreed/marti_common/issues/477>)
+  * Contributors: Edward Venator, Marc Alban, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Thu, 31 Aug 2017 00:00:00 -0000
+
+ros-humble-swri-math-util (1.0.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 02 Aug 2017 00:00:00 -0000
+
+ros-humble-swri-math-util (0.3.0-1bullseye) bullseye; urgency=high
+
+  * Merge together the indigo, jade, and kinetic branches (#443 <https://github.com/pjreed/marti_common/issues/443>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 20 Jun 2017 00:00:00 -0000
+
+ros-humble-swri-math-util (0.2.4-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 00:00:00 -0000
+
+ros-humble-swri-math-util (0.2.3-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 09 Dec 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.2.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 07 Dec 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.2.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.2.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 21 Jun 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.1.5-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.1.4-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.1.3-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.1.2-1bullseye) bullseye; urgency=high
+
+  * Refactors RANSAC matching code to use more matrix operations.
+  * Contributors: Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.1.1-1bullseye) bullseye; urgency=high
+
+  * Minor change: marks single-argument constructor for Ransac explicit.
+  * Contributors: Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 00:00:00 -0000
+
+ros-humble-swri-math-util (0.1.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 29 Sep 2015 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.14-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.13-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.12-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 14 Aug 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.11-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.10-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.9-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.8-1bullseye) bullseye; urgency=high
+
+  * Refactors RANSAC matching code to use more matrix operations.
+  * Contributors: Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.7-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 18 Nov 2015 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.6-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.5-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.4-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.3-1bullseye) bullseye; urgency=high
+
+  * Format package files
+  * Contributors: Jerry Towler
+
+ -- P. J. Reed <preed@swri.org>  Sat, 26 Sep 2015 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.2-1bullseye) bullseye; urgency=high
+
+  * Renames math_util to swri_math_util. Refs #231 <https://github.com/swri-robotics/marti_common/issues/231>.
+  * Contributors: Edward Venator
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 00:00:00 -0000
+
+ros-humble-swri-math-util (0.0.1-1bullseye) bullseye; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 00:00:00 -0000
+
+
