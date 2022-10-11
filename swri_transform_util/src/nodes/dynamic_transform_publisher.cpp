@@ -36,7 +36,11 @@
 #include <rcl_interfaces/msg/floating_point_range.hpp>
 #include <rcl_interfaces/msg/parameter_descriptor.hpp>
 #include <tf2_ros/transform_broadcaster.h>
+#ifdef USE_TF2_H_FILES
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#else
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#endif
 #include <tf2/transform_datatypes.h>
 #include <tf2/LinearMath/Transform.h>
 #include <tf2/LinearMath/Vector3.h>
@@ -112,7 +116,7 @@ namespace swri_transform_util
       geometry_msgs::msg::TransformStamped stamped_transform;
       stamped_transform.transform = tf2::toMsg(transform);
       stamped_transform.header.stamp = rclcpp::Clock().now() +
-          rclcpp::Duration(this->get_parameter("stamp_offset").as_double());
+          rclcpp::Duration::from_seconds(this->get_parameter("stamp_offset").as_double());
       stamped_transform.child_frame_id = this->get_parameter("child_frame").as_string();
       stamped_transform.header.frame_id = this->get_parameter("parent_frame").as_string();
 
