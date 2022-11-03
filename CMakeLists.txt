@@ -18,13 +18,13 @@ find_package(OpenCV REQUIRED core)
 
 find_package(Eigen3 REQUIRED)
 
-add_library(${PROJECT_NAME}
+add_library(${PROJECT_NAME} SHARED
   src/cubic_spline.cpp
   src/geometry_util.cpp
   src/intersection.cpp
   src/polygon.cpp
 )
-target_compile_definitions(${PROJECT_NAME} PUBLIC "-DUSE_UNSTABLE_GEOS_CPP_API")
+
 target_include_directories(${PROJECT_NAME}
   PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -32,7 +32,7 @@ target_include_directories(${PROJECT_NAME}
   ${GEOS_INCLUDE_DIRS}
 )
 target_link_libraries(${PROJECT_NAME}
-  ${GEOS_LIBRARIES}
+  geos_c
   Eigen3::Eigen
   opencv_core
 )
@@ -67,7 +67,6 @@ ament_export_dependencies(rclcpp)
 ament_export_dependencies(cv_bridge)
 ament_export_dependencies(tf2)
 ament_export_include_directories(include)
-ament_export_libraries(${PROJECT_NAME}
-  ${GEOS_LIBRARIES})
+ament_export_libraries(${PROJECT_NAME} geos_c) 
 
 ament_package()
