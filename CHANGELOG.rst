@@ -2,6 +2,15 @@
 Changelog for package swri_geometry_util
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.5.0 (2022-10-11)
+------------------
+
+3.4.2 (2022-10-10)
+------------------
+* Switch to C API (`#689 <https://github.com/swri-robotics/marti_common/issues/689>`_)
+  * Switch to GEOS C API from C++ API
+* Contributors: David Anthony
+
 3.3.2 (2020-11-24)
 ------------------
 
