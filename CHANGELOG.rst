@@ -2,6 +2,12 @@
 Changelog for package swri_serial_util
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.5.0 (2022-10-11)
+------------------
+
+3.4.2 (2022-10-10)
+------------------
+
 3.3.2 (2020-11-24)
 ------------------
 * Make SerialPort's functions virtual (`#608 <https://github.com/swri-robotics/marti_common/issues/608>`_)
