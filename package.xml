@@ -1,6 +1,6 @@
 <package format="3">
   <name>swri_geometry_util</name>
-  <version>3.4.0</version>
+  <version>3.5.0</version>
   <description>
 
      swri_geometry_util
@@ -20,7 +20,7 @@
   -->
   <depend>cv_bridge</depend>
   <depend>eigen</depend>
-  <depend>libgeos++-dev</depend>
+  <depend>geos</depend>
   <depend>rclcpp</depend>
   <depend>tf2</depend>
 
