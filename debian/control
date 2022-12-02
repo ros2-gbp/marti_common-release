@@ -1,0 +1,12 @@
+Source: ros-galactic-swri-image-util
+Section: misc
+Priority: optional
+Maintainer: P. J. Reed <preed@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libeigen3-dev, pkg-config, ros-galactic-ament-cmake, ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-ament-index-cpp, ros-galactic-camera-calibration-parsers, ros-galactic-cv-bridge, ros-galactic-geometry-msgs, ros-galactic-image-geometry, ros-galactic-image-transport, ros-galactic-message-filters, ros-galactic-nav-msgs, ros-galactic-rclcpp, ros-galactic-rclcpp-components, ros-galactic-rclpy, ros-galactic-std-msgs, ros-galactic-swri-geometry-util, ros-galactic-swri-math-util, ros-galactic-swri-opencv-util, ros-galactic-swri-roscpp, ros-galactic-tf2, ros-galactic-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-galactic-swri-image-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libeigen3-dev, ros-galactic-ament-index-cpp, ros-galactic-camera-calibration-parsers, ros-galactic-cv-bridge, ros-galactic-geometry-msgs, ros-galactic-image-geometry, ros-galactic-image-transport, ros-galactic-message-filters, ros-galactic-nav-msgs, ros-galactic-rclcpp, ros-galactic-rclcpp-components, ros-galactic-rclpy, ros-galactic-std-msgs, ros-galactic-swri-geometry-util, ros-galactic-swri-math-util, ros-galactic-swri-opencv-util, ros-galactic-swri-roscpp, ros-galactic-tf2, ros-galactic-ros-workspace
+Description: swri_image_util
