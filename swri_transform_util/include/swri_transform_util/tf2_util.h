@@ -1,6 +1,6 @@
 // *****************************************************************************
 //
-// Copyright (c) 2015, Southwest Research Institute® (SwRI®)
+// Copyright (c) 2022, Southwest Research Institute® (SwRI®)
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -27,25 +27,29 @@
 //
 // *****************************************************************************
 
-#ifndef SWRI_GEOMETRY_UTIL_CUBIC_SPLINE_H_
-#define SWRI_GEOMETRY_UTIL_CUBIC_SPLINE_H_
+#ifndef TRANSFORM_UTIL_TF2_UTIL_H_
+#define TRANSFORM_UTIL_TF2_UTIL_H_
 
-#include <vector>
-#include <opencv2/core/core.hpp>
-#include <tf2/transform_datatypes.h>
-#include <tf2/LinearMath/Vector3.h>
+#ifdef USE_TF2_H_FILES
+#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#else
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#endif
 
-namespace swri_geometry_util
+namespace tf2
 {
-  bool CubicSplineInterpolation(
-    const std::vector<cv::Vec2d>& points,
-    double delta,
-    std::vector<std::vector<cv::Vec2d> >& splines);
 
-  bool CubicSplineInterpolation(
-    const std::vector<tf2::Vector3>& points,
-    double delta,
-    std::vector<std::vector<tf2::Vector3> >& splines);
+tf2::Quaternion createQuaternionFromYaw(double yaw);
+
+tf2::Quaternion createQuaternionFromRPY(double roll, double pitch, double yaw);
+
+geometry_msgs::msg::Quaternion createQuaternionMsgFromRollPitchYaw(double roll, double pitch, double yaw);
+
+void quaternionTFToMsg(const Quaternion& bt, geometry_msgs::msg::Quaternion& msg);
+
+void quaternionMsgToTF(const geometry_msgs::msg::Quaternion& msg, Quaternion& bt);
+
 }
 
-#endif
+
+#endif  // TRANSFORM_UTIL_TF2_UTIL_H_
