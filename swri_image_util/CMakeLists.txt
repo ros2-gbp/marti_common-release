@@ -22,14 +22,14 @@ find_package(swri_opencv_util REQUIRED)
 find_package(swri_roscpp REQUIRED)
 find_package(tf2 REQUIRED)
 
-find_package(OpenCV REQUIRED COMPONENTS core)
+find_package(OpenCV REQUIRED COMPONENTS core stitching)
 
 find_package(Boost REQUIRED COMPONENTS filesystem system random)
 
 find_package(Eigen3 REQUIRED)
 add_definitions(${EIGEN3_DEFINITIONS})
 
-add_library(${PROJECT_NAME}
+add_library(${PROJECT_NAME} SHARED
   src/draw_util.cpp
   src/geometry_util.cpp
   src/image_matching.cpp
@@ -52,6 +52,7 @@ target_link_libraries(${PROJECT_NAME}
   Boost::system
   Eigen3::Eigen
   opencv_core
+  opencv_stitching
 )
 ament_target_dependencies(${PROJECT_NAME}
   camera_calibration_parsers
@@ -62,6 +63,7 @@ ament_target_dependencies(${PROJECT_NAME}
   message_filters
   nav_msgs
   rclcpp
+  rclcpp_components
   std_msgs
   swri_geometry_util
   swri_math_util
@@ -80,7 +82,7 @@ add_library(${PROJECT_NAME}_nodes SHARED
   src/nodes/image_pub_node.cpp
   src/nodes/normalization_image_node.cpp
   src/nodes/normalize_response_node.cpp
-#  src/nodes/replace_colors_nodelet.cpp
+  #src/nodes/replace_colors_node.cpp
   src/nodes/rotate_image_node.cpp
   src/nodes/scale_image_node.cpp
   src/nodes/warp_image_node.cpp
