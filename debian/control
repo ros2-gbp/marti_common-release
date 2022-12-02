@@ -1,0 +1,12 @@
+Source: ros-galactic-swri-geometry-util
+Section: misc
+Priority: optional
+Maintainer: P. J. Reed <preed@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, libgeos-dev, pkg-config, ros-galactic-ament-cmake, ros-galactic-ament-cmake-gtest <!nocheck>, ros-galactic-cv-bridge, ros-galactic-rclcpp, ros-galactic-tf2, ros-galactic-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-galactic-swri-geometry-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, libgeos-dev, ros-galactic-cv-bridge, ros-galactic-rclcpp, ros-galactic-tf2, ros-galactic-ros-workspace
+Description: swri_geometry_util
