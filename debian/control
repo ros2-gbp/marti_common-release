@@ -1,0 +1,12 @@
+Source: ros-galactic-swri-transform-util
+Section: misc
+Priority: optional
+Maintainer: P. J. Reed <preed@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libgeos++-dev, libproj-dev, libyaml-cpp-dev, pkg-config, ros-galactic-ament-cmake, ros-galactic-ament-cmake-python, ros-galactic-cv-bridge, ros-galactic-diagnostic-msgs, ros-galactic-diagnostic-updater, ros-galactic-geographic-msgs, ros-galactic-geometry-msgs, ros-galactic-gps-msgs, ros-galactic-marti-nav-msgs, ros-galactic-rcl-interfaces, ros-galactic-rclcpp, ros-galactic-rclcpp-components, ros-galactic-rclpy, ros-galactic-sensor-msgs, ros-galactic-swri-math-util, ros-galactic-swri-roscpp, ros-galactic-tf2, ros-galactic-tf2-geometry-msgs, ros-galactic-tf2-ros, ros-galactic-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-galactic-swri-transform-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libgeos++-dev, libproj-dev, libyaml-cpp-dev, python3-numpy, ros-galactic-cv-bridge, ros-galactic-diagnostic-msgs, ros-galactic-diagnostic-updater, ros-galactic-geographic-msgs, ros-galactic-geometry-msgs, ros-galactic-gps-msgs, ros-galactic-launch-xml, ros-galactic-marti-nav-msgs, ros-galactic-rcl-interfaces, ros-galactic-rclcpp, ros-galactic-rclcpp-components, ros-galactic-rclpy, ros-galactic-sensor-msgs, ros-galactic-swri-math-util, ros-galactic-swri-roscpp, ros-galactic-tf2, ros-galactic-tf2-geometry-msgs, ros-galactic-tf2-py, ros-galactic-tf2-ros, ros-galactic-ros-workspace
+Description: The swri_transform_util package contains utility functions and classes for transforming between coordinate frames.
