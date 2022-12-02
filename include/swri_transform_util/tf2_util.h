@@ -1,6 +1,6 @@
 // *****************************************************************************
 //
-// Copyright (c) 2014, Southwest Research Institute® (SwRI®)
+// Copyright (c) 2022, Southwest Research Institute® (SwRI®)
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -27,73 +27,29 @@
 //
 // *****************************************************************************
 
-#include <swri_transform_util/transformer.h>
+#ifndef TRANSFORM_UTIL_TF2_UTIL_H_
+#define TRANSFORM_UTIL_TF2_UTIL_H_
 
-namespace swri_transform_util
+#ifdef USE_TF2_H_FILES
+#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#else
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#endif
+
+namespace tf2
 {
-  Transformer::Transformer() :
-    initialized_(false),
-    logger_(rclcpp::get_logger("swri_transform_util::Transformer"))
-  {
-  }
 
-  void Transformer::Initialize(
-      const std::shared_ptr<tf2_ros::Buffer> tf,
-      const std::shared_ptr<LocalXyWgs84Util> xy_util)
-  {
-    tf_buffer_ = tf;
-    local_xy_util_ = xy_util;
-    initialized_ = Initialize();
-  }
+tf2::Quaternion createQuaternionFromYaw(double yaw);
 
-  bool Transformer::Initialize()
-  {
-    return true;
-  }
+tf2::Quaternion createQuaternionFromRPY(double roll, double pitch, double yaw);
 
-  bool Transformer::GetTransform(
-      const std::string& target_frame,
-      const std::string& source_frame,
-      const tf2::TimePoint& time,
-      geometry_msgs::msg::TransformStamped& transform) const
-  {
-    if (!tf_buffer_)
-    {
-      return false;
-    }
+geometry_msgs::msg::Quaternion createQuaternionMsgFromRollPitchYaw(double roll, double pitch, double yaw);
 
-    bool has_transform = false;
-    try
-    {
-      if (tf_buffer_->_frameExists(target_frame) &&
-          tf_buffer_->_frameExists(source_frame))
-      {
-        transform = tf_buffer_->lookupTransform(
-            target_frame,
-            source_frame,
-            time,
-            std::chrono::milliseconds(10));
+void quaternionTFToMsg(const Quaternion& bt, geometry_msgs::msg::Quaternion& msg);
 
-        has_transform = true;
-      }
-    }
-    catch (const tf2::LookupException& e)
-    {
-      RCLCPP_ERROR(logger_, "[transformer]: %s", e.what());
-    }
-    catch (const tf2::ConnectivityException& e)
-    {
-      RCLCPP_ERROR(logger_, "[transformer]: %s", e.what());
-    }
-    catch (const tf2::ExtrapolationException& e)
-    {
-      RCLCPP_ERROR(logger_, "[transformer]: %s", e.what());
-    }
-    catch (...)
-    {
-      RCLCPP_ERROR(logger_, "[transformer]: Exception looking up transform");
-    }
+void quaternionMsgToTF(const geometry_msgs::msg::Quaternion& msg, Quaternion& bt);
 
-    return has_transform;
-  }
 }
+
+
+#endif  // TRANSFORM_UTIL_TF2_UTIL_H_
