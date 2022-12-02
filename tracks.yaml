@@ -71,7 +71,6 @@ tracks:
     name: upstream
     patches: null
     release_inc: '1'
-    release_repo_url: git@github.com:swri-robotics-gbp/marti_common-release.git
     release_tag: :{version}
     ros_distro: foxy
     vcs_type: git
@@ -97,7 +96,6 @@ tracks:
     name: upstream
     patches: null
     release_inc: '1'
-    release_repo_url: git@github.com:swri-robotics-gbp/marti_common-release.git
     release_tag: 3.4.0
     ros_distro: galactic
     vcs_type: git
@@ -123,7 +121,6 @@ tracks:
     name: upstream
     patches: null
     release_inc: '1'
-    release_repo_url: https://github.com/ros2-gbp/marti_common-release.git
     release_tag: 3.5.1
     ros_distro: humble
     vcs_type: git
