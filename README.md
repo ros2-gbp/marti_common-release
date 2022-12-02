@@ -4,7 +4,7 @@ marti\_common
 [![ROS2 Build Farm Build Status](http://build.ros2.org/buildStatus/icon?job=Ddev__marti_common__ubuntu_bionic_amd64)](http://build.ros2.org/job/Ddev__marti_common__ubuntu_bionic_amd64/)
 =============
 
-This repository provides various utility packages created at [Southwest Reseach Institute](http://www.swri.org)'s [Intelligent Vehicle Systems](http://www.swri.org/4org/d10/isd/ivs/default.htm) section for working with [Robot Operating System(ROS)](http://www.ros.org).  This branch adds support for ROS 2 Dashing.  Most packages from ROS 1 have been ported, but a few have been removed due to being unnecessary or redundant, and some functionality is not implemented yet.
+This repository provides various utility packages created at [Southwest Reseach Institute](http://www.swri.org)'s [Intelligent Vehicle Systems](http://www.swri.org/4org/d10/isd/ivs/default.htm) section for working with [Robot Operating System(ROS)](http://www.ros.org).  This branch adds support for ROS 2 Dashing and newer releases.  Most packages from ROS 1 have been ported, but a few have been removed due to being unnecessary or redundant, and some functionality is not implemented yet.
 
 Overview
 --------
@@ -36,14 +36,14 @@ Package migration notes:
 
 Also note that many features have not been tested yet.  Please open an issue if you try to use something and it doesn't work.
 
-Installation (ROS Dashing, Eloquent, Foxy)
+Installation (ROS Foxy, Galactic, Humble)
 ------------
 
 If you have installed ROS 2, you can install any of the packages in this repository with apt-get:
 
     sudo apt-get install ros-${ROS_DISTRO}-<package>
 
-Building From Source (ROS Dashing, Eloquent, Foxy)
+Building From Source (ROS Foxy, Galactic, Humble)
 ------------
 
 These directions assume you have already set up rosdep. See the [rosdep documentation](http://wiki.ros.org/rosdep) on the ROS wiki for help setting up rosdep.
