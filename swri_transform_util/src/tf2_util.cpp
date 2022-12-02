@@ -1,6 +1,6 @@
 // *****************************************************************************
 //
-// Copyright (c) 2015, Southwest Research Institute® (SwRI®)
+// Copyright (c) 2022, Southwest Research Institute® (SwRI®)
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -27,25 +27,57 @@
 //
 // *****************************************************************************
 
-#ifndef SWRI_GEOMETRY_UTIL_CUBIC_SPLINE_H_
-#define SWRI_GEOMETRY_UTIL_CUBIC_SPLINE_H_
+#include <swri_transform_util/tf2_util.h>
+#include <math.h> 
 
-#include <vector>
-#include <opencv2/core/core.hpp>
-#include <tf2/transform_datatypes.h>
-#include <tf2/LinearMath/Vector3.h>
-
-namespace swri_geometry_util
+namespace tf2
 {
-  bool CubicSplineInterpolation(
-    const std::vector<cv::Vec2d>& points,
-    double delta,
-    std::vector<std::vector<cv::Vec2d> >& splines);
 
-  bool CubicSplineInterpolation(
-    const std::vector<tf2::Vector3>& points,
-    double delta,
-    std::vector<std::vector<tf2::Vector3> >& splines);
+static const double QUATERNION_TOLERANCE = 0.1f;
+
+tf2::Quaternion createQuaternionFromYaw(double yaw)
+{
+  tf2::Quaternion q;
+  q.setRPY(0.0, 0.0, yaw);
+  return q;
 }
 
-#endif
+tf2::Quaternion createQuaternionFromRPY(double roll, double pitch, double yaw)
+{
+  tf2::Quaternion q;
+  q.setRPY(roll, pitch, yaw);
+  return q;
+}
+
+geometry_msgs::msg::Quaternion createQuaternionMsgFromRollPitchYaw(double roll, double pitch, double yaw)
+{
+  geometry_msgs::msg::Quaternion q_msg;
+  quaternionTFToMsg(createQuaternionFromRPY(roll, pitch, yaw), q_msg);
+  return q_msg;
+}
+
+void quaternionTFToMsg(const Quaternion& bt, geometry_msgs::msg::Quaternion& msg)
+{
+  if (fabs(bt.length2() - 1 ) > QUATERNION_TOLERANCE)
+  {
+    Quaternion bt_temp = bt;
+    bt_temp.normalize();
+    msg.x = bt_temp.x(); msg.y = bt_temp.y(); msg.z = bt_temp.z();  msg.w = bt_temp.w();
+  }
+  else
+  {
+    msg.x = bt.x(); msg.y = bt.y(); msg.z = bt.z();  msg.w = bt.w();
+  }
+}
+
+void quaternionMsgToTF(const geometry_msgs::msg::Quaternion& msg, Quaternion& bt)
+{
+  bt = Quaternion(msg.x, msg.y, msg.z, msg.w);
+  if (fabs(bt.length2() - 1 ) > QUATERNION_TOLERANCE)
+  {
+    bt.normalize();
+  }
+}
+
+
+} // namespace tf2
