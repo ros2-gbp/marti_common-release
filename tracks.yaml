@@ -97,7 +97,8 @@ tracks:
     name: upstream
     patches: null
     release_inc: '1'
-    release_tag: 3.4.0
+    release_repo_url: null
+    release_tag: 3.5.1
     ros_distro: galactic
     vcs_type: git
     vcs_uri: https://github.com/swri-robotics/marti_common.git
