@@ -15,7 +15,7 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 
 ### Build Library ###
-add_library(${PROJECT_NAME} 
+add_library(${PROJECT_NAME} SHARED
   src/route.cpp
   src/route_point.cpp
   src/route_speeds.cpp
@@ -28,7 +28,14 @@ target_include_directories(${PROJECT_NAME}
   $<INSTALL_INTERFACE:include>
 )
 set_property(TARGET ${PROJECT_NAME} PROPERTY POSITION_INDEPENDENT_CODE ON)
+
+if ("$ENV{ROS_DISTRO}" STRLESS_EQUAL "galactic")
+  target_compile_definitions(${PROJECT_NAME}
+    PRIVATE "-DUSE_TF2_H_FILES")
+endif()
+
 ament_target_dependencies(${PROJECT_NAME}
+  PUBLIC
   ament_cmake
   marti_common_msgs
   marti_nav_msgs
@@ -56,5 +63,5 @@ install(DIRECTORY include/
 ament_export_dependencies(ament_cmake)
 ament_export_include_directories(include)
 ament_export_libraries(${PROJECT_NAME})
-
 ament_package()
+
