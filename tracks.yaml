@@ -123,6 +123,7 @@ tracks:
     name: upstream
     patches: null
     release_inc: '1'
+    release_repo_url: null
     release_tag: 3.5.1
     ros_distro: humble
     vcs_type: git
