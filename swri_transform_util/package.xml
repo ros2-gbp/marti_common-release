@@ -1,6 +1,6 @@
 <package format="3">
   <name>swri_transform_util</name>
-  <version>3.5.0</version>
+  <version>3.5.2</version>
   <description>
 
      The swri_transform_util package contains utility functions and classes for
@@ -23,7 +23,7 @@
   <depend>geographic_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>gps_msgs</depend>
-  <depend>libgeos++-dev</depend>
+  <depend>geos</depend>
   <depend>marti_nav_msgs</depend>
   <depend>proj</depend>
   <depend>rclcpp_components</depend>
