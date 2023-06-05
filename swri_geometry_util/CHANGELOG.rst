@@ -2,6 +2,14 @@
 Changelog for package swri_geometry_util
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.5.2 (2023-05-30)
+------------------
+
+3.5.1 (2022-11-29)
+------------------
+* Fixing how the GEOS library is found (`#697 <https://github.com/swri-robotics/marti_common/issues/697>`_)
+* Contributors: David Anthony
+
 3.5.0 (2022-10-11)
 ------------------
 
