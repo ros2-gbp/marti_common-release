@@ -2,6 +2,9 @@
 Changelog for package swri_transform_util
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.5.4 (2023-08-14)
+------------------
+
 3.5.3 (2023-06-07)
 ------------------
 * Fixing build error in Iron (`#709 <https://github.com/swri-robotics/marti_common/issues/709>`_)
