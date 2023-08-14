@@ -1,0 +1,12 @@
+Source: ros-iron-swri-roscpp
+Section: misc
+Priority: optional
+Maintainer: P. J. Reed <preed@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libgtest-dev <!nocheck>, ros-iron-ament-cmake, ros-iron-ament-cmake-gtest <!nocheck>, ros-iron-diagnostic-updater, ros-iron-marti-common-msgs, ros-iron-nav-msgs, ros-iron-rclcpp, ros-iron-ros-environment, ros-iron-rosidl-cmake, ros-iron-rosidl-default-generators, ros-iron-std-msgs, ros-iron-std-srvs, ros-iron-ros-workspace, ros-iron-rosidl-typesupport-fastrtps-c, ros-iron-rosidl-typesupport-fastrtps-cpp
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-iron-swri-roscpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-iron-diagnostic-updater, ros-iron-marti-common-msgs, ros-iron-nav-msgs, ros-iron-rclcpp, ros-iron-rosidl-default-runtime, ros-iron-std-msgs, ros-iron-std-srvs, ros-iron-ros-workspace
+Description: swri_roscpp
