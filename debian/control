@@ -1,0 +1,12 @@
+Source: ros-iron-swri-image-util
+Section: misc
+Priority: optional
+Maintainer: P. J. Reed <preed@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libeigen3-dev, pkg-config, ros-iron-ament-cmake, ros-iron-ament-cmake-gtest <!nocheck>, ros-iron-ament-index-cpp, ros-iron-camera-calibration-parsers, ros-iron-cv-bridge, ros-iron-geometry-msgs, ros-iron-image-geometry, ros-iron-image-transport, ros-iron-message-filters, ros-iron-nav-msgs, ros-iron-rclcpp, ros-iron-rclcpp-components, ros-iron-rclpy, ros-iron-std-msgs, ros-iron-swri-geometry-util, ros-iron-swri-math-util, ros-iron-swri-opencv-util, ros-iron-swri-roscpp, ros-iron-tf2, ros-iron-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-iron-swri-image-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libeigen3-dev, ros-iron-ament-index-cpp, ros-iron-camera-calibration-parsers, ros-iron-cv-bridge, ros-iron-geometry-msgs, ros-iron-image-geometry, ros-iron-image-transport, ros-iron-message-filters, ros-iron-nav-msgs, ros-iron-rclcpp, ros-iron-rclcpp-components, ros-iron-rclpy, ros-iron-std-msgs, ros-iron-swri-geometry-util, ros-iron-swri-math-util, ros-iron-swri-opencv-util, ros-iron-swri-roscpp, ros-iron-tf2, ros-iron-ros-workspace
+Description: swri_image_util
