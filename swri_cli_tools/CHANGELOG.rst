@@ -2,6 +2,14 @@
 Changelog for package swri_cli_tools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.5.4 (2023-08-14)
+------------------
+
+3.5.3 (2023-06-07)
+------------------
+* Adding missing python dependency (`#708 <https://github.com/swri-robotics/marti_common/issues/708>`_)
+* Contributors: David Anthony
+
 3.5.2 (2023-05-30)
 ------------------
 * Add CLI Tools to ROS 2 (`#701 <https://github.com/danthony06/marti_common/issues/701>`_)
