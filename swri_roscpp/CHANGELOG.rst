@@ -2,6 +2,34 @@
 Changelog for package swri_roscpp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.6.0 (2023-08-22)
+------------------
+* Rolling updates (`#715 <https://github.com/swri-robotics/marti_common/issues/715>`_)
+  - Updating code for Rolling.
+  - Removing conditional compilation code related to EOL distributions.
+* Contributors: David Anthony
+
+3.5.4 (2023-08-14)
+------------------
+* Add publisher and subscription options to constructors (`#714 <https://github.com/swri-robotics/marti_common/issues/714>`_)
+* Use System QoS Settings as Defaults (`#713 <https://github.com/swri-robotics/marti_common/issues/713>`_)
+* Adding wrapper for unique_ptr arguments (`#712 <https://github.com/swri-robotics/marti_common/issues/712>`_)
+* Contributors: David Anthony, Veronica Knisley
+
+3.5.3 (2023-06-07)
+------------------
+* Fixing build warnings (`#707 <https://github.com/swri-robotics/marti_common/issues/707>`_)
+* Contributors: David Anthony
+
+3.5.2 (2023-05-30)
+------------------
+* Fix dependencies (`#704 <https://github.com/danthony06/marti_common/issues/704>`_)
+  * Fixing build process so dependencies are correctly exported.
+* Contributors: David Anthony
+
+3.5.1 (2022-11-29)
+------------------
+
 3.5.0 (2022-10-11)
 ------------------
 
