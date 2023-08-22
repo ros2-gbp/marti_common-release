@@ -27,19 +27,15 @@
 //
 // *****************************************************************************
 
-#include <swri_transform_util/transform_manager.h>
 
 #include <vector>
 
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+
 #include <swri_transform_util/frames.h>
+#include <swri_transform_util/transform_manager.h>
 #include <swri_transform_util/utm_transformer.h>
 #include <swri_transform_util/wgs84_transformer.h>
-
-#ifdef USE_TF2_H_FILES
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-#else
-#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
-#endif
 
 namespace swri_transform_util
 {
@@ -337,7 +333,7 @@ namespace swri_transform_util
     return GetTransform(target_frame,
         source_frame,
         time,
-        std::chrono::milliseconds(0), transform);
+        std::chrono::milliseconds(100), transform);
   }
 
   bool TransformManager::GetTransform(
