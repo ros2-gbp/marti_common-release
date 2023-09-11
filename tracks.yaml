@@ -174,11 +174,11 @@ tracks:
     patches: null
     release_inc: '1'
     release_repo_url: null
-    release_tag: 3.5.4
+    release_tag: 3.6.1
     ros_distro: iron
     vcs_type: git
     vcs_uri: https://github.com/swri-robotics/marti_common.git
-    version: 3.5.4
+    version: 3.6.1
   jade:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
