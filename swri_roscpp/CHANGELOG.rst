@@ -2,6 +2,19 @@
 Changelog for package swri_roscpp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.6.1 (2023-09-11)
+------------------
+* Fixing Buildfarm Issues (`#716 <https://github.com/swri-robotics/marti_common/issues/716>`_)
+  * Cleaning up code to fix build farm errors
+* Contributors: David Anthony
+
+3.6.0 (2023-08-22)
+------------------
+* Rolling updates (`#715 <https://github.com/swri-robotics/marti_common/issues/715>`_)
+  - Updating code for Rolling.
+  - Removing conditional compilation code related to EOL distributions.
+* Contributors: David Anthony
+
 3.5.4 (2023-08-14)
 ------------------
 * Add publisher and subscription options to constructors (`#714 <https://github.com/swri-robotics/marti_common/issues/714>`_)
