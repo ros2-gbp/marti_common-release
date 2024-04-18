@@ -1,0 +1,12 @@
+Source: ros-jazzy-swri-roscpp
+Section: misc
+Priority: optional
+Maintainer: P. J. Reed <preed@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ament-cmake, ament-cmake-googletest <!nocheck>, libboost-all-dev, libdiagnostic-updater-dev, libgtest-dev <!nocheck>, libnav-msgs-dev, libstd-msgs-dev, libstd-srvs-dev, python3-diagnostic-updater, python3-nav-msgs, python3-std-msgs, python3-std-srvs, ros-environment, ros-jazzy-marti-common-msgs, ros-jazzy-rclcpp, ros-jazzy-rosidl-default-generators, ros-nav-msgs, ros-std-msgs, ros-std-srvs, rosidl-cmake, ros-jazzy-ros-workspace, ros-jazzy-rosidl-typesupport-fastrtps-c, ros-jazzy-rosidl-typesupport-fastrtps-cpp
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-swri-roscpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libdiagnostic-updater-dev, libnav-msgs-dev, libstd-msgs-dev, libstd-srvs-dev, python3-diagnostic-updater, python3-nav-msgs, python3-std-msgs, python3-std-srvs, ros-jazzy-marti-common-msgs, ros-jazzy-rclcpp, ros-jazzy-rosidl-default-runtime, ros-nav-msgs, ros-std-msgs, ros-std-srvs, ros-jazzy-ros-workspace
+Description: swri_roscpp
