@@ -1,1 +1,1 @@
-{"base": "c28e4fa79", "parent": "debian/rolling/swri_roscpp", "previous": "1ec14a449", "trim": "", "trimbase": ""}
+{"base": "144a662c8", "parent": "debian/jazzy/swri_roscpp", "previous": "f9c82e611", "trim": "", "trimbase": ""}
