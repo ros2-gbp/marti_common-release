@@ -1,0 +1,25 @@
+From 709bb99f972f56635737cb3b2ac5d285d6416f2d Mon Sep 17 00:00:00 2001
+From: David Anthony <david.anthony@swri.org>
+Date: Fri, 6 Sep 2024 14:06:09 -0500
+Subject: [PATCH] Update package.xml
+
+Removing pip-only test dependency.
+---
+ package.xml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/package.xml b/package.xml
+index ae2cdd1a3..72f4831c0 100644
+--- a/package.xml
++++ b/package.xml
+@@ -48,7 +48,6 @@
+   <test_depend>launch_ros</test_depend>
+   <test_depend>launch_testing</test_depend>
+   <test_depend>launch_testing_ament_cmake</test_depend>
+-  <test_depend>python-transforms3d-pip</test_depend>
+ 
+   <export>
+     <build_type>ament_cmake</build_type>
+-- 
+2.46.0
+
