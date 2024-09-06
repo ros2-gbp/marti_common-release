@@ -2,6 +2,9 @@
 Changelog for package swri_roscpp
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.7.1 (2024-09-06)
+------------------
+
 3.7.0 (2024-09-06)
 ------------------
 * Simplify Cmake by linking to the library target (`#742 <https://github.com/swri-robotics/marti_common/issues/742>`_)
