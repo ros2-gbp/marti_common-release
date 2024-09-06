@@ -2,14 +2,15 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>swri_route_util</name>
-  <version>3.6.1</version>
+  <version>3.7.0</version>
 
   <description>
     This library provides functionality to simplify working with the
     navigation messages defined in marti_nav_msgs.
   </description>
 
-  <maintainer email="preed@swri.org">P. J. Reed</maintainer>
+  <author>P. J. Reed</author>
+  <maintainer email="swri-robotics@swri.org">Southwest Research Institute</maintainer>
   <license>BSD</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
