@@ -2,6 +2,11 @@
 Changelog for package swri_image_util
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.7.2 (2024-09-16)
+------------------
+* Adding dependency on ros_environment so buildfarm builds work (`#749 <https://github.com/swri-robotics/marti_common/issues/749>`_)
+* Contributors: David Anthony
+
 3.7.1 (2024-09-06)
 ------------------
 
