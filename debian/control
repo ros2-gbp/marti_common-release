@@ -1,0 +1,12 @@
+Source: ros-jazzy-swri-console-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-rorobircs@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-rclcpp, ros-jazzy-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-swri-console-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-rclcpp, ros-jazzy-ros-workspace
+Description: Utility functions for interacting with console
