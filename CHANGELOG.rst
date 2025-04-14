@@ -2,6 +2,9 @@
 Changelog for package swri_transform_util
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.7.4 (2025-04-14)
+------------------
+
 3.7.3 (2024-09-18)
 ------------------
 * Update origin params (`#752 <https://github.com/swri-robotics/marti_common/issues/752>`_)
