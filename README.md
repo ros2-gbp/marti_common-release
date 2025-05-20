@@ -1,3 +1,38 @@
+## marti_common (humble) - 3.7.5-1
+
+The packages in the `marti_common` repository were released into the `humble` distro by running `/usr/bin/bloom-release --edit --rosdistro humble marti_common` on `Tue, 20 May 2025 17:33:34 -0000`
+
+These packages were released:
+- `swri_cli_tools`
+- `swri_console_util`
+- `swri_dbw_interface`
+- `swri_geometry_util`
+- `swri_image_util`
+- `swri_math_util`
+- `swri_opencv_util`
+- `swri_roscpp`
+- `swri_route_util`
+- `swri_serial_util`
+- `swri_system_util`
+- `swri_transform_util`
+
+Version of package(s) in repository `marti_common`:
+
+- upstream repository: https://github.com/swri-robotics/marti_common.git
+- release repository: https://github.com/ros2-gbp/marti_common-release.git
+- rosdistro version: `3.7.4-1`
+- old version: `3.7.4-1`
+- new version: `3.7.5-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## marti_common (rolling) - 3.7.5-1
 
 The packages in the `marti_common` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --edit --rosdistro rolling marti_common` on `Tue, 20 May 2025 17:27:20 -0000`
