@@ -30,8 +30,8 @@
 #ifndef TRANSFORM_UTIL_TRANSFORM_UTIL_H_
 #define TRANSFORM_UTIL_TRANSFORM_UTIL_H_
 
-#include <string>
 #include <array>
+#include <string>
 
 #include <tf2/transform_datatypes.hpp>
 #include <tf2/LinearMath/Transform.hpp>
