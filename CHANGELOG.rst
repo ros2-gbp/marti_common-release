@@ -2,6 +2,19 @@
 Changelog for package swri_route_util
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.8.0 (2025-05-27)
+------------------
+* Updates for Rolling (`#771 <https://github.com/swri-robotics/marti_common/issues/771>`_)
+  * Removed obsolete ament macros
+  * Removed boost in favor of standard library functionality
+  * Deprecated swri_system_util
+* Contributors: David Anthony
+
+3.7.6 (2025-05-22)
+------------------
+* Reverting changes back to 3.7.4 (`#770 <https://github.com/swri-robotics/marti_common/issues/770>`_)
+* Contributors: David Anthony
+
 3.7.5 (2025-05-20)
 ------------------
 * Rolling Updates (`#767 <https://github.com/swri-robotics/marti_common/issues/767>`_)
