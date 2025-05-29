@@ -39,7 +39,10 @@ add_library(${PROJECT_NAME} SHARED
 target_include_directories(${PROJECT_NAME}
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-    $<INSTALL_INTERFACE:include>)
+    $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
+  PRIVATE
+    ${swri_roscpp_TARGETS}
+)
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
   ${geometry_msgs_TARGETS}
@@ -47,7 +50,6 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   ${std_msgs_TARGETS}
   ${swri_geometry_util_TARGETS}
   ${swri_opencv_util_TARGETS}
-  ${swri_roscpp_TARGETS}
   camera_calibration_parsers::camera_calibration_parsers
   cv_bridge::cv_bridge
   Eigen3::Eigen
@@ -74,8 +76,8 @@ add_library(${PROJECT_NAME}_nodes SHARED
   #src/nodes/replace_colors_node.cpp
   src/nodes/rotate_image_node.cpp
   src/nodes/scale_image_node.cpp
-  src/nodes/warp_image_node.cpp
-)
+  src/nodes/warp_image_node.cpp)
+
 target_compile_definitions(${PROJECT_NAME}_nodes
   PRIVATE "COMPOSITION_BUILDING_DLL")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::BlendImagesNode")
@@ -92,10 +94,13 @@ rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::RotateI
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::ScaleImageNode")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::WarpImageNode")
 
-target_link_libraries(${PROJECT_NAME}_nodes PUBLIC
-  ${PROJECT_NAME}
-  ament_index_cpp::ament_index_cpp
-  image_transport::image_transport)
+target_link_libraries(${PROJECT_NAME}_nodes
+  PUBLIC
+    ${PROJECT_NAME}
+    ament_index_cpp::ament_index_cpp
+    image_transport::image_transport
+  PRIVATE
+    message_filters::message_filters)
 
 # Iron and later switched some cv_bridge files to .hpp from .h
 if ("${cv_bridge_VERSION}" VERSION_LESS "3.3.0")
@@ -109,7 +114,7 @@ if(BUILD_TESTING)
 endif()
 
 install(DIRECTORY include/
-  DESTINATION include)
+  DESTINATION include/${PROJECT_NAME})
 
 install(TARGETS ${PROJECT_NAME}
   EXPORT export_${PROJECT_NAME}
@@ -123,8 +128,11 @@ install(TARGETS ${PROJECT_NAME}_nodes
   ARCHIVE DESTINATION lib)
 
 ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
-ament_export_dependencies(ament_cmake)
-ament_export_dependencies(OpenCV)
-ament_export_dependencies(rclcpp)
-ament_export_dependencies(tf2)
+ament_export_dependencies(ament_cmake
+  camera_calibration_parsers
+  OpenCV
+  rclcpp
+  swri_opencv_util
+  tf2
+)
 ament_package()
