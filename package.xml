@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>swri_image_util</name>
-  <version>3.8.1</version>
+  <version>3.8.2</version>
   <description>
     A package of commonly image manipulation utilities.
   </description>
@@ -18,20 +18,16 @@
   <depend>camera_calibration_parsers</depend>
   <depend>cv_bridge</depend>
   <depend>eigen</depend>
-  <depend>geometry_msgs</depend>
   <depend>image_geometry</depend>
   <depend>image_transport</depend>
   <depend>message_filters</depend>
-  <depend>nav_msgs</depend>
   <depend>rcl_interfaces</depend>
   <depend>rclcpp</depend>
   <depend>rclcpp_components</depend>
   <depend>rclpy</depend>
-  <depend>std_msgs</depend>
   <depend>swri_geometry_util</depend>
   <depend>swri_math_util</depend>
   <depend>swri_opencv_util</depend>
-  <depend>swri_roscpp</depend>
   <depend>tf2</depend>
 
   <test_depend>ament_cmake_gtest</test_depend>
