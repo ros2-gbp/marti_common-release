@@ -1,0 +1,12 @@
+Source: ros-jazzy-swri-roscpp
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libgtest-dev <!nocheck>, ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-gtest <!nocheck>, ros-jazzy-diagnostic-msgs, ros-jazzy-diagnostic-updater, ros-jazzy-marti-common-msgs, ros-jazzy-nav-msgs, ros-jazzy-rclcpp, ros-jazzy-ros-environment, ros-jazzy-rosidl-cmake, ros-jazzy-rosidl-default-generators, ros-jazzy-std-msgs, ros-jazzy-std-srvs, ros-jazzy-ros-workspace, ros-jazzy-rosidl-typesupport-fastrtps-c, ros-jazzy-rosidl-typesupport-fastrtps-cpp
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-swri-roscpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-diagnostic-msgs, ros-jazzy-diagnostic-updater, ros-jazzy-marti-common-msgs, ros-jazzy-nav-msgs, ros-jazzy-rclcpp, ros-jazzy-rosidl-default-runtime, ros-jazzy-std-msgs, ros-jazzy-std-srvs, ros-jazzy-ros-workspace
+Description: A package that extends rclcpp with some commonly used functionality to reduce boilerplate code.
