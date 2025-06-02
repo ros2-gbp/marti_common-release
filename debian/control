@@ -1,0 +1,12 @@
+Source: ros-kilted-swri-route-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-kilted-ament-cmake, ros-kilted-geometry-msgs, ros-kilted-marti-common-msgs, ros-kilted-marti-nav-msgs, ros-kilted-rclcpp, ros-kilted-swri-geometry-util, ros-kilted-swri-math-util, ros-kilted-swri-transform-util, ros-kilted-tf2-geometry-msgs, ros-kilted-visualization-msgs, ros-kilted-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kilted-swri-route-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kilted-geometry-msgs, ros-kilted-marti-common-msgs, ros-kilted-marti-nav-msgs, ros-kilted-rclcpp, ros-kilted-swri-geometry-util, ros-kilted-swri-math-util, ros-kilted-swri-transform-util, ros-kilted-tf2-geometry-msgs, ros-kilted-visualization-msgs, ros-kilted-ros-workspace
+Description: This library provides functionality to simplify working with the navigation messages defined in marti_nav_msgs.
