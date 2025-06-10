@@ -1,0 +1,12 @@
+Source: ros-humble-swri-transform-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libgeographic-dev, libgeos-dev, libopencv-dev, libproj-dev, libyaml-cpp-dev, pkg-config, ros-humble-ament-cmake, ros-humble-ament-cmake-gtest <!nocheck>, ros-humble-ament-cmake-python, ros-humble-ament-index-cpp <!nocheck>, ros-humble-cv-bridge, ros-humble-diagnostic-msgs, ros-humble-diagnostic-updater, ros-humble-geographic-msgs, ros-humble-geometry-msgs, ros-humble-gps-msgs, ros-humble-launch-ros <!nocheck>, ros-humble-launch-testing <!nocheck>, ros-humble-launch-testing-ament-cmake <!nocheck>, ros-humble-marti-nav-msgs, ros-humble-rcl-interfaces, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-rclpy, ros-humble-sensor-msgs, ros-humble-swri-math-util, ros-humble-swri-roscpp, ros-humble-tf2, ros-humble-tf2-geometry-msgs, ros-humble-tf2-ros, ros-humble-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-humble-swri-transform-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libgeographic-dev, libgeos-dev, libopencv-dev, libproj-dev, libyaml-cpp-dev, python3-numpy, python3-yaml, ros-humble-cv-bridge, ros-humble-diagnostic-msgs, ros-humble-diagnostic-updater, ros-humble-geographic-msgs, ros-humble-geometry-msgs, ros-humble-gps-msgs, ros-humble-marti-nav-msgs, ros-humble-rcl-interfaces, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-rclpy, ros-humble-sensor-msgs, ros-humble-swri-math-util, ros-humble-swri-roscpp, ros-humble-tf2, ros-humble-tf2-geometry-msgs, ros-humble-tf2-ros, ros-humble-ros-workspace
+Description: The swri_transform_util package contains utility functions and classes for transforming between coordinate frames.
