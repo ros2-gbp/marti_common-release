@@ -1,0 +1,12 @@
+Source: ros-humble-swri-route-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-geometry-msgs, ros-humble-marti-common-msgs, ros-humble-marti-nav-msgs, ros-humble-rclcpp, ros-humble-swri-geometry-util, ros-humble-swri-math-util, ros-humble-swri-transform-util, ros-humble-tf2-geometry-msgs, ros-humble-visualization-msgs, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-swri-route-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-geometry-msgs, ros-humble-marti-common-msgs, ros-humble-marti-nav-msgs, ros-humble-rclcpp, ros-humble-swri-geometry-util, ros-humble-swri-math-util, ros-humble-swri-transform-util, ros-humble-tf2-geometry-msgs, ros-humble-visualization-msgs, ros-humble-ros-workspace
+Description: This library provides functionality to simplify working with the navigation messages defined in marti_nav_msgs.
