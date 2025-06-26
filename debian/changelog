@@ -1,0 +1,485 @@
+ros-jazzy-swri-serial-util (3.8.5-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Wed, 25 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.8.4-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 10 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.8.3-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 03 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.8.2-1bookworm) bookworm; urgency=high
+
+  * Dependency cleanup (#774 <https://github.com/swri-robotics/marti_common/issues/774>)
+  * Contributors: DangitBen
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Mon, 02 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.8.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Thu, 29 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.8.0-1bookworm) bookworm; urgency=high
+
+  * Updates for Rolling (#771 <https://github.com/swri-robotics/marti_common/issues/771>)
+    * Removed obsolete ament macros
+    * Removed boost in favor of standard library functionality
+    * Deprecated swri_system_util
+  * Contributors: David Anthony
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 27 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.7.6-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Thu, 22 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.7.5-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 20 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.7.4-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Mon, 14 Apr 2025 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.7.3-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Wed, 18 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.7.2-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Mon, 16 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.7.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Fri, 06 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.7.0-1bookworm) bookworm; urgency=high
+
+  * Cleaning up package maintainer (#721 <https://github.com/swri-robotics/marti_common/issues/721>)
+  * Contributors: David Anthony
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Fri, 06 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.6.1-1bookworm) bookworm; urgency=high
+
+  * Fixing Buildfarm Issues (#716 <https://github.com/swri-robotics/marti_common/issues/716>)
+    * Cleaning up code to fix build farm errors
+  * Contributors: David Anthony
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Sep 2023 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.6.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 22 Aug 2023 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.5.4-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 14 Aug 2023 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.5.3-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 07 Jun 2023 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.5.2-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 30 May 2023 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.5.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 29 Nov 2022 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.5.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Oct 2022 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.4.2-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 10 Oct 2022 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.3.2-1bookworm) bookworm; urgency=high
+
+  * Make SerialPort's functions virtual (#608 <https://github.com/swri-robotics/marti_common/issues/608>)
+  * Contributors: Ryan DelGizzi
+
+ -- P. J. Reed <preed@swri.org>  Tue, 24 Nov 2020 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.3.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 19 Aug 2020 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.3.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 15 Jul 2020 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.2.1-1bookworm) bookworm; urgency=high
+
+  * ROS Foxy support (#582 <https://github.com/swri-robotics/marti_common/issues/582>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Wed, 10 Jun 2020 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.2.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 13 May 2020 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.1.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 30 Mar 2020 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.0.5-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 10 Mar 2020 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.0.4-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 05 Mar 2020 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.0.3-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.0.2-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.0.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (3.0.0-1bookworm) bookworm; urgency=high
+
+  * ROS2 Dashing conversion (#549 <https://github.com/pjreed/marti_common/issues/549>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Fri, 08 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.10.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 04 Sep 2019 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.9.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 23 May 2019 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.8.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Feb 2019 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.7.3-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 03 Jan 2019 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.7.2-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 20 Dec 2018 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.7.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 14 Dec 2018 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.7.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 04 Dec 2018 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.6.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sat, 03 Nov 2018 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.5.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 12 Oct 2018 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.4.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 09 Oct 2018 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.3.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 May 2018 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.2.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 11 May 2018 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.2.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 12 Feb 2018 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.1.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 26 Jan 2018 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (2.0.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 18 Dec 2017 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (1.2.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 Oct 2017 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (1.1.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 31 Aug 2017 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (1.0.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 02 Aug 2017 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.3.0-1bookworm) bookworm; urgency=high
+
+  * Merge together the indigo, jade, and kinetic branches (#443 <https://github.com/pjreed/marti_common/issues/443>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 20 Jun 2017 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.2.4-1bookworm) bookworm; urgency=high
+
+  * Support higher serial baud rates
+    The system header /usr/include/asm-generic/termbits.h has constants for
+    supporting baud rates up to 4000000, but swri_serial_util only allows up
+    to 230400.  Some devices support these higher rates and there's no reason
+    to not support them, so this adds support for them.
+  * Check for error from ioctl in serial_port
+    Fixes #406 <https://github.com/swri-robotics/marti_common/issues/406>
+  * Contributors: Edward Venator, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.2.3-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 09 Dec 2016 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.2.2-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 07 Dec 2016 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.2.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.2.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 21 Jun 2016 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.1.5-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.1.4-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.1.3-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.1.2-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.1.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.1.0-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 29 Sep 2015 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.14-1bookworm) bookworm; urgency=high
+
+  * Support higher serial baud rates (#423 <https://github.com/swri-robotics/marti_common/issues/423>)
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.13-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.12-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 14 Aug 2016 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.11-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.10-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.9-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.8-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.7-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 18 Nov 2015 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.6-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 06:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.5-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.4-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.3-1bookworm) bookworm; urgency=high
+
+  * Fixes missing boost dependency in swri_serial_util.
+    Refs #234 <https://github.com/swri-robotics/marti_common/issues/234>.
+  * Contributors: Ed Venator
+
+ -- P. J. Reed <preed@swri.org>  Sat, 26 Sep 2015 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.2-1bookworm) bookworm; urgency=high
+
+  * Renames serial_util to swri_serial_util. Refs #231 <https://github.com/swri-robotics/marti_common/issues/231>.
+  * Contributors: Edward Venator
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 05:00:00 -0000
+
+ros-jazzy-swri-serial-util (0.0.1-1bookworm) bookworm; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 05:00:00 -0000
+
+
