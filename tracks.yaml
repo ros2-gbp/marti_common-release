@@ -124,11 +124,11 @@ tracks:
     patches: null
     release_inc: '1'
     release_repo_url: null
-    release_tag: 3.8.5
+    release_tag: 3.8.6
     ros_distro: humble
     vcs_type: git
     vcs_uri: https://github.com/swri-robotics/marti_common.git
-    version: 3.8.5
+    version: 3.8.6
   indigo:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
