@@ -1,0 +1,12 @@
+Source: ros-humble-swri-opencv-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libopencv-dev, ros-humble-ament-cmake, ros-humble-cv-bridge, ros-humble-swri-math-util, ros-humble-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-humble-swri-opencv-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libopencv-dev, ros-humble-cv-bridge, ros-humble-swri-math-util, ros-humble-ros-workspace
+Description: A package with commonly used OpenCV functionality.
