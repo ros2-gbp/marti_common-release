@@ -1,0 +1,609 @@
+ros-jazzy-swri-roscpp (3.8.6-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Thu, 17 Jul 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.8.5-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Wed, 25 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.8.4-1noble) noble; urgency=high
+
+  * Fix swri roscpp srv to topic (#776 <https://github.com/swri-robotics/marti_common/issues/776>)
+    * Change generate_topic_service_files install location to match ROS 2 conventions
+    * update generate_topic_service_files to match ROS 2 conventions (snake_case and .hpp)
+    ---------
+    Co-authored-by: Ben Andrew <mailto:benjamin.andrew@swri.org>
+  * Contributors: DangitBen
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 10 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.8.3-1noble) noble; urgency=high
+
+  * Make generate_topic_service_files installation location match ROS 2 Convention  (#775 <https://github.com/swri-robotics/marti_common/issues/775>)
+  * Contributors: DangitBen
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 03 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.8.2-1noble) noble; urgency=high
+
+  * Dependency cleanup (#774 <https://github.com/swri-robotics/marti_common/issues/774>)
+  * Contributors: DangitBen
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Mon, 02 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.8.1-1noble) noble; urgency=high
+
+  * Modernize cmake targets and exporting (#772 <https://github.com/swri-robotics/marti_common/issues/772>)
+  * Contributors: David Anthony, Ben Andrew
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Thu, 29 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.8.0-1noble) noble; urgency=high
+
+  * Updates for Rolling (#771 <https://github.com/swri-robotics/marti_common/issues/771>)
+    * Removed obsolete ament macros
+    * Removed boost in favor of standard library functionality
+    * Deprecated swri_system_util
+  * Contributors: David Anthony
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 27 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.7.6-1noble) noble; urgency=high
+
+  * Reverting changes back to 3.7.4 (#770 <https://github.com/swri-robotics/marti_common/issues/770>)
+  * Contributors: David Anthony
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Thu, 22 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.7.5-1noble) noble; urgency=high
+
+  * Rolling Updates (#767 <https://github.com/swri-robotics/marti_common/issues/767>)
+    * Updating with new header file names
+    * Removing deprecated ament calls
+    ---------
+    Co-authored-by: David V. Lu!! <mailto:davidvlu@gmail.com>
+  * Contributors: David Anthony
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 20 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.7.4-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Mon, 14 Apr 2025 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.7.3-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Wed, 18 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.7.2-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Mon, 16 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.7.1-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Fri, 06 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.7.0-1noble) noble; urgency=high
+
+  * Simplify Cmake by linking to the library target (#742 <https://github.com/swri-robotics/marti_common/issues/742>)
+    By linking to the library target, we can reuse the include paths and libraries from it. This will
+    simplify the Cmake a bit.
+    It also fixes a bug when linking to the ros2-jazzy branch of diagnostic_updater.
+  * Sanity checking time before performing duration calculation (#735 <https://github.com/swri-robotics/marti_common/issues/735>)
+  * Add definitions for subscribers with unique_ptr callback arguments (#731 <https://github.com/swri-robotics/marti_common/issues/731>)
+  * Cleaning up package maintainer (#721 <https://github.com/swri-robotics/marti_common/issues/721>)
+  * Contributors: David Anthony, Ramon Wijnands, Veronica Knisley
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Fri, 06 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.6.1-1noble) noble; urgency=high
+
+  * Fixing Buildfarm Issues (#716 <https://github.com/swri-robotics/marti_common/issues/716>)
+    * Cleaning up code to fix build farm errors
+  * Contributors: David Anthony
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Sep 2023 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.6.0-1noble) noble; urgency=high
+
+  * Rolling updates (#715 <https://github.com/swri-robotics/marti_common/issues/715>)
+    - Updating code for Rolling.
+    - Removing conditional compilation code related to EOL distributions.
+  * Contributors: David Anthony
+
+ -- P. J. Reed <preed@swri.org>  Tue, 22 Aug 2023 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.5.4-1noble) noble; urgency=high
+
+  * Add publisher and subscription options to constructors (#714 <https://github.com/swri-robotics/marti_common/issues/714>)
+  * Use System QoS Settings as Defaults (#713 <https://github.com/swri-robotics/marti_common/issues/713>)
+  * Adding wrapper for unique_ptr arguments (#712 <https://github.com/swri-robotics/marti_common/issues/712>)
+  * Contributors: David Anthony, Veronica Knisley
+
+ -- P. J. Reed <preed@swri.org>  Mon, 14 Aug 2023 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.5.3-1noble) noble; urgency=high
+
+  * Fixing build warnings (#707 <https://github.com/swri-robotics/marti_common/issues/707>)
+  * Contributors: David Anthony
+
+ -- P. J. Reed <preed@swri.org>  Wed, 07 Jun 2023 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.5.2-1noble) noble; urgency=high
+
+  * Fix dependencies (#704 <https://github.com/danthony06/marti_common/issues/704>)
+    * Fixing build process so dependencies are correctly exported.
+  * Contributors: David Anthony
+
+ -- P. J. Reed <preed@swri.org>  Tue, 30 May 2023 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.5.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 29 Nov 2022 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.5.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Oct 2022 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.4.2-1noble) noble; urgency=high
+
+  * Add Humble Support (#691 <https://github.com/swri-robotics/marti_common/issues/691>)
+    * Adding Humble support based on @shrijitsingh99 PR in https://github.com/swri-robotics/marti_common/pull/685
+  * Contributors: David Anthony, Shrijit Singh
+
+ -- P. J. Reed <preed@swri.org>  Mon, 10 Oct 2022 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.3.2-1noble) noble; urgency=high
+
+  * Fix topic services under ros2 (#604 <https://github.com/swri-robotics/marti_common/issues/604>)
+  * Fix bugs related to subscription age and setting timeout (#609 <https://github.com/swri-robotics/marti_common/issues/609>, #611 <https://github.com/swri-robotics/marti_common/issues/611>) (#612 <https://github.com/swri-robotics/marti_common/issues/612>)
+  * Contributors: David Anthony, mschickler
+
+ -- P. J. Reed <preed@swri.org>  Tue, 24 Nov 2020 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.3.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 19 Aug 2020 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.3.0-1noble) noble; urgency=high
+
+  * Implement topic services in ROS 2 (#2893 <https://github.com/swri-robotics/marti_common/issues/2893>)
+  * Contributors: Matthew Bries
+
+ -- P. J. Reed <preed@swri.org>  Wed, 15 Jul 2020 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.2.1-1noble) noble; urgency=high
+
+  * ROS Foxy support (#582 <https://github.com/swri-robotics/marti_common/issues/582>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Wed, 10 Jun 2020 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.2.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 13 May 2020 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.1.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 30 Mar 2020 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.0.5-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 10 Mar 2020 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.0.4-1noble) noble; urgency=high
+
+  * ROS 2 Eloquent compatibility (#568 <https://github.com/swri-robotics/marti_common/issues/568>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Thu, 05 Mar 2020 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.0.3-1noble) noble; urgency=high
+
+  * Replace deprecated functions in swri_roscpp
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.0.2-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.0.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (3.0.0-1noble) noble; urgency=high
+
+  * ROS2 Dashing conversion (#549 <https://github.com/pjreed/marti_common/issues/549>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Fri, 08 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.10.0-1noble) noble; urgency=high
+
+  * Prevent swri:Subscriber latency calculations if current time is zero (#548 <https://github.com/swri-robotics/marti_common/issues/548>)
+  * Change way name is created for topic services (#541 <https://github.com/swri-robotics/marti_common/issues/541>)
+  * Contributors: jgassaway, nick-alton
+
+ -- P. J. Reed <preed@swri.org>  Wed, 04 Sep 2019 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.9.0-1noble) noble; urgency=high
+
+  * Add callback for on change for dynamic parameters (#540 <https://github.com/swri-robotics/marti_common/issues/540>)
+  * Add topic service unit tests (#538 <https://github.com/swri-robotics/marti_common/issues/538>)
+  * Contributors: Matthew, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Thu, 23 May 2019 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.8.0-1noble) noble; urgency=high
+
+  * Add dynamic parameters (#532 <https://github.com/swri-robotics/marti_common/issues/532>)
+  * Contributors: Matthew
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Feb 2019 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.7.3-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 03 Jan 2019 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.7.2-1noble) noble; urgency=high
+
+  * Fix cmake macro for service_splitter.py (#535 <https://github.com/swri-robotics/marti_common/issues/535>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Thu, 20 Dec 2018 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.7.1-1noble) noble; urgency=high
+
+  * Fix conditional causing exists to not work properly. (#533 <https://github.com/swri-robotics/marti_common/issues/533>)
+  * Remove non ascii character to please python (#530 <https://github.com/swri-robotics/marti_common/issues/530>)
+  * Contributors: Matthew
+
+ -- P. J. Reed <preed@swri.org>  Fri, 14 Dec 2018 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.7.0-1noble) noble; urgency=high
+
+  * Add topic based services and associated cmake utils (#523 <https://github.com/swri-robotics/marti_common/issues/523>)
+    Provide utilities for implementing service type requests using messages in an almost transparent way.
+  * Contributors: Matthew
+
+ -- P. J. Reed <preed@swri.org>  Tue, 04 Dec 2018 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.6.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sat, 03 Nov 2018 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.5.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 12 Oct 2018 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.4.0-1noble) noble; urgency=high
+
+  * Update package maintainers (#520 <https://github.com/swri-robotics/marti_common/issues/520>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 09 Oct 2018 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.3.0-1noble) noble; urgency=high
+
+  * Only calculate statistics when messages arrive in order (#516 <https://github.com/swri-robotics/marti_common/issues/516>)
+  * Contributors: David Anthony
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 May 2018 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.2.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 11 May 2018 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.2.0-1noble) noble; urgency=high
+
+  * Fix crash from messages with null timestamps (#511 <https://github.com/swri-robotics/marti_common/issues/511>)
+  * Contributors: Matthew
+
+ -- P. J. Reed <preed@swri.org>  Mon, 12 Feb 2018 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.1.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 26 Jan 2018 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (2.0.0-1noble) noble; urgency=high
+
+  * Ensure all swri::Subscriber members are initialized (#505 <https://github.com/swri-robotics/marti_common/issues/505>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Mon, 18 Dec 2017 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (1.2.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 Oct 2017 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (1.1.0-1noble) noble; urgency=high
+
+  * Add OptionalDiagnosedPublisher class (#483 <https://github.com/pjreed/marti_common/issues/483>)
+  * Contributors: Edward Venator, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Thu, 31 Aug 2017 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (1.0.0-1noble) noble; urgency=high
+
+  * Add support for boost::function callbacks to swri::Subscriber.
+  * Contributors: Elliot Johnson
+
+ -- P. J. Reed <preed@swri.org>  Wed, 02 Aug 2017 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.3.0-1noble) noble; urgency=high
+
+  * Merge together the indigo, jade, and kinetic branches (#443 <https://github.com/pjreed/marti_common/issues/443>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 20 Jun 2017 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.2.4-1noble) noble; urgency=high
+
+  * Port #385 <https://github.com/swri-robotics/marti_common/issues/385> and #419 <https://github.com/swri-robotics/marti_common/issues/419> to kinetic. (#420 <https://github.com/swri-robotics/marti_common/issues/420>)
+    A common error when using unfamiliar ROS nodes is to accidentally set parameters
+    by the wrong name. This feature allows the node author to output a WARNING
+    for any unused parameters.
+    Ported forward from indigo-devel
+  * Contributors: Edward Venator
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.2.3-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 09 Dec 2016 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.2.2-1noble) noble; urgency=high
+
+  * Deprecate LatchedSubscriber. (#391 <https://github.com/swri-robotics/marti_common/issues/391>)
+    LatchedSubscriber should be replaced with a swri::Subscriber that is
+    initialized with the address of a location to store messages. This change
+    makes for a simpler and more consistent interface, and avoids the confusion
+    that comes from overloading the -> operator.
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Wed, 07 Dec 2016 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.2.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.2.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 21 Jun 2016 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.1.5-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.1.4-1noble) noble; urgency=high
+
+  * Add timeoutParam() method to swri::Subscriber.
+    This commit adds a new convenience method, timeoutParam, to
+    swri::Subscriber that reads a specified parameter directly from the
+    parameter server and sets it as the subscriber's timeout value.  This
+    is to simplify setup code that currently has to define a temporary
+    variable, read the parameter in the temp, and then set the timeout.
+  * Contributors: Elliot Johnson
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.1.3-1noble) noble; urgency=high
+
+  * Adds getParam() functions to swri_roscpp.
+    These functions wrap NodeHandle::getParam(). If the parameter does
+    not exist, they emit an error message and return false.
+  * Fixes some compiler warnings.
+  * The swri::Subscriber::blockTimeouts function now returns a value.
+    Previously, it did not explicitly returning a value, which has
+    undefined behavior. It now returns the result of the blockTimeouts
+    function that it wraps.
+  * Contributors: Edward Venator, Elliot Johnson, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.1.2-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.1.1-1noble) noble; urgency=high
+
+  * First jade release of swri_roscpp
+  * Contributors: Edward Venator
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.1.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 29 Sep 2015 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.14-1noble) noble; urgency=high
+
+  * Increase queue_size in swri_roscpp/Subscriber.
+    This commit increases the queue size for subscribers that use the
+    store mechanism instead of a callback.  The queue size was set to 1,
+    which we have seen problems with, so this will increase it to 2.
+  * Add missing qualifiers for swri_roscpp unused parameter functions.
+  * Merge pull request #385 <https://github.com/swri-robotics/marti_common/issues/385> from evenator/unused-parameter-warnings
+    Adds the ability to warn when unused parameters are set in a namespace.
+  * Add test for getUnusedParamKeys
+    Adds an automated test for getUnusedParamKeys based on the example
+    code.
+  * Remove default value of node handle for warnUnusedParams
+    This default value may cause unexpected behvavior, especially
+    with nodelets.
+  * Rename param_test to param_example.
+    param_test isn't an automated test, just an example of how to use the
+    param utilities.
+  * Document unused parameter functions.
+    The set difference algorithms used to determine which parameters
+    are used are non-obvious. This adds documentation.
+  * Mark _used_params static.
+  * Adds the ability to warn when unused parameters are set in a namespace.
+    A common error when using unfamiliar ROS nodes is to accidentally set
+    parameters by the wrong name. This features allows the node author
+    to output a WARNING for any unused parameters.
+    See the param_test node for an example.
+  * Contributors: Ed Venator, Edward Venator, Elliot Johnson, elliotjo
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.13-1noble) noble; urgency=high
+
+  * Add swri_roscpp functions for reading float values.
+    These add support for reading float values directly instead of
+    doubles.
+  * Contributors: Elliot Johnson
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.12-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 14 Aug 2016 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.11-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.10-1noble) noble; urgency=high
+
+  * Deprecate LatchedSubscriber.
+    This commit adds an alternative to LatchedSubscriber and deprecates
+    the LatchedSubscriber interface.  LatchedSubscriber should be replaced
+    with a swri::Subscriber that is initialized with the address of a
+    location to store messages.  For example, instead of:
+    swri::LatchedSubscriber<my_package::MyMessage> msg_;
+    ...
+    msg_.initialize(nh_, "topic_name");
+    ...
+    ROS_INFO("msg->field = %f", msg->field);
+    this becomes:
+    swri::Subscriber sub_;
+    my_package::MyMessageConstPtr msg_;
+    ...
+    sub_ = swri::SubscribeR(nh_, "topic_name", &msg_);
+    ...
+    ROS_INFO("msg->field = %f", msg->field).
+    This change makes for a simpler and more consistent interface, and
+    avoids the confusion that comes from overloading the -> operator.
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.9-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.8-1noble) noble; urgency=high
+
+  * Makes swri::Subscriber's assignment operator return a value.
+    According to the C++ spec, assignment operators must return a reference to the
+    current object (*this). swri::Subscriber's assignment operator was not
+    returning a value, which works in GCC, but not Clang. GCC would do the right
+    thing for you, but Clang will compile the code but generate a SIGILL
+    exception at runtime. This is easily fixed by manually returning *this.
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.7-1noble) noble; urgency=high
+
+  * Fixes broken changelog #279 <https://github.com/swri-robotics/marti_common/issues/279>.
+
+ -- P. J. Reed <preed@swri.org>  Wed, 18 Nov 2015 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.6-1noble) noble; urgency=high
+
+  * First release of swri_roscpp
+  * Contributors: Edward Venator
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 06:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.5-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 20:27:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.4-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 16:35:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.3-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sat, 26 Sep 2015 05:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.2-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 20:00:00 -0000
+
+ros-jazzy-swri-roscpp (0.0.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 14:06:00 -0000
+
+
