@@ -1,0 +1,604 @@
+ros-jazzy-swri-route-util (3.8.7-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Fri, 18 Jul 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.8.6-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Thu, 17 Jul 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.8.5-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Wed, 25 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.8.4-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 10 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.8.3-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 03 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.8.2-1noble) noble; urgency=high
+
+  * Dependency cleanup (#774 <https://github.com/swri-robotics/marti_common/issues/774>)
+  * Contributors: DangitBen
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Mon, 02 Jun 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.8.1-1noble) noble; urgency=high
+
+  * Modernize cmake targets and exporting (#772 <https://github.com/swri-robotics/marti_common/issues/772>)
+  * Contributors: David Anthony, Ben Andrew
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Thu, 29 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.8.0-1noble) noble; urgency=high
+
+  * Updates for Rolling (#771 <https://github.com/swri-robotics/marti_common/issues/771>)
+    * Removed obsolete ament macros
+    * Removed boost in favor of standard library functionality
+    * Deprecated swri_system_util
+  * Contributors: David Anthony
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 27 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.7.6-1noble) noble; urgency=high
+
+  * Reverting changes back to 3.7.4 (#770 <https://github.com/swri-robotics/marti_common/issues/770>)
+  * Contributors: David Anthony
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Thu, 22 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.7.5-1noble) noble; urgency=high
+
+  * Rolling Updates (#767 <https://github.com/swri-robotics/marti_common/issues/767>)
+    * Updating with new header file names
+    * Removing deprecated ament calls
+    ---------
+    Co-authored-by: David V. Lu!! <mailto:davidvlu@gmail.com>
+  * [kilted] Update deprecated calls to ament_target_dependencies (#763 <https://github.com/swri-robotics/marti_common/issues/763>)
+  * Contributors: David Anthony, David V. Lu!!
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Tue, 20 May 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.7.4-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Mon, 14 Apr 2025 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.7.3-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Wed, 18 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.7.2-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Mon, 16 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.7.1-1noble) noble; urgency=high
+
+
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Fri, 06 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.7.0-1noble) noble; urgency=high
+
+  * Cleaning up package maintainer (#721 <https://github.com/swri-robotics/marti_common/issues/721>)
+  * Contributors: David Anthony
+
+ -- Southwest Research Institute <swri-robotics@swri.org>  Fri, 06 Sep 2024 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.6.1-1noble) noble; urgency=high
+
+  * Fixing Buildfarm Issues (#716 <https://github.com/swri-robotics/marti_common/issues/716>)
+    * Cleaning up code to fix build farm errors
+  * Contributors: David Anthony
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Sep 2023 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.6.0-1noble) noble; urgency=high
+
+  * Rolling updates (#715 <https://github.com/swri-robotics/marti_common/issues/715>)
+    - Updating code for Rolling.
+    - Removing conditional compilation code related to EOL distributions.
+  * Contributors: David Anthony
+
+ -- P. J. Reed <preed@swri.org>  Tue, 22 Aug 2023 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.5.4-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 14 Aug 2023 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.5.3-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 07 Jun 2023 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.5.2-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 30 May 2023 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.5.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 29 Nov 2022 06:00:00 -0000
+
+ros-jazzy-swri-route-util (3.5.0-1noble) noble; urgency=high
+
+  * Fix ament exports (#693 <https://github.com/swri-robotics/marti_common/issues/693>)
+    * Fix ament exports
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Oct 2022 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.4.2-1noble) noble; urgency=high
+
+  * Add Humble Support (#691 <https://github.com/swri-robotics/marti_common/issues/691>)
+    * Adding Humble support based on @shrijitsingh99 PR in https://github.com/swri-robotics/marti_common/pull/685
+  * Contributors: David Anthony, Shrijit Singh
+
+ -- P. J. Reed <preed@swri.org>  Mon, 10 Oct 2022 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.3.2-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 24 Nov 2020 06:00:00 -0000
+
+ros-jazzy-swri-route-util (3.3.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 19 Aug 2020 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.3.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 15 Jul 2020 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.2.1-1noble) noble; urgency=high
+
+  * ROS Foxy support (#582 <https://github.com/swri-robotics/marti_common/issues/582>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Wed, 10 Jun 2020 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.2.0-1noble) noble; urgency=high
+
+  * Add overload of generateObstacleData for tracked objects (Dashing) (#579 <https://github.com/swri-robotics/marti_common/issues/579>)
+  * Contributors: Matthew Bries
+
+ -- P. J. Reed <preed@swri.org>  Wed, 13 May 2020 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.1.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 30 Mar 2020 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.0.5-1noble) noble; urgency=high
+
+  * Fix linking bugs (#569 <https://github.com/swri-robotics/marti_common/issues/569>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 10 Mar 2020 05:00:00 -0000
+
+ros-jazzy-swri-route-util (3.0.4-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 05 Mar 2020 06:00:00 -0000
+
+ros-jazzy-swri-route-util (3.0.3-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-route-util (3.0.2-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-route-util (3.0.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 11 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-route-util (3.0.0-1noble) noble; urgency=high
+
+  * ROS2 Dashing conversion (#549 <https://github.com/pjreed/marti_common/issues/549>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Fri, 08 Nov 2019 06:00:00 -0000
+
+ros-jazzy-swri-route-util (2.10.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 04 Sep 2019 05:00:00 -0000
+
+ros-jazzy-swri-route-util (2.9.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 23 May 2019 05:00:00 -0000
+
+ros-jazzy-swri-route-util (2.8.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Feb 2019 06:00:00 -0000
+
+ros-jazzy-swri-route-util (2.7.3-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 03 Jan 2019 06:00:00 -0000
+
+ros-jazzy-swri-route-util (2.7.2-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 20 Dec 2018 06:00:00 -0000
+
+ros-jazzy-swri-route-util (2.7.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 14 Dec 2018 06:00:00 -0000
+
+ros-jazzy-swri-route-util (2.7.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 04 Dec 2018 06:00:00 -0000
+
+ros-jazzy-swri-route-util (2.6.0-1noble) noble; urgency=high
+
+  * Remove incorrect translation of object geometry (#527 <https://github.com/swri-robotics/marti_common/issues/527>)
+  * Contributors: agyoungs
+
+ -- P. J. Reed <preed@swri.org>  Sat, 03 Nov 2018 05:00:00 -0000
+
+ros-jazzy-swri-route-util (2.5.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 12 Oct 2018 05:00:00 -0000
+
+ros-jazzy-swri-route-util (2.4.0-1noble) noble; urgency=high
+
+  * Update package maintainers (#520 <https://github.com/swri-robotics/marti_common/issues/520>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 09 Oct 2018 05:00:00 -0000
+
+ros-jazzy-swri-route-util (2.3.0-1noble) noble; urgency=high
+
+  * Fill in route id of route positions when possible. (#517 <https://github.com/swri-robotics/marti_common/issues/517>)
+  * Contributors: Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 May 2018 05:00:00 -0000
+
+ros-jazzy-swri-route-util (2.2.1-1noble) noble; urgency=high
+
+  * Catch and fix NaNs in the fillOrientations function (#513 <https://github.com/swri-robotics/marti_common/issues/513>)
+  * Contributors: kriskozak
+
+ -- P. J. Reed <preed@swri.org>  Fri, 11 May 2018 05:00:00 -0000
+
+ros-jazzy-swri-route-util (2.2.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Mon, 12 Feb 2018 06:00:00 -0000
+
+ros-jazzy-swri-route-util (2.1.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 26 Jan 2018 06:00:00 -0000
+
+ros-jazzy-swri-route-util (2.0.0-1noble) noble; urgency=high
+
+  * Accept '1' or 'true' for stop points. (#489 <https://github.com/swri-robotics/marti_common/issues/489>)
+  * Contributors: Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Mon, 18 Dec 2017 06:00:00 -0000
+
+ros-jazzy-swri-route-util (1.2.0-1noble) noble; urgency=high
+
+  * Add support for vehicle_width_override property on route (#485 <https://github.com/swri-robotics/marti_common/issues/485>)
+  * Add bounds checking to extractSubroute. (#486 <https://github.com/swri-robotics/marti_common/issues/486>)
+  * Contributors: Marc Alban, Matthew Bries
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 Oct 2017 05:00:00 -0000
+
+ros-jazzy-swri-route-util (1.1.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Thu, 31 Aug 2017 05:00:00 -0000
+
+ros-jazzy-swri-route-util (1.0.0-1noble) noble; urgency=high
+
+  * Add route speed functions (#466 <https://github.com/swri-robotics/marti_common/issues/466>)
+    * Add visualization function for swri_route_util.
+    * Add code to calculate max speeds based on curvature to swri_route_util.
+    * Add speed/obstacle functionality to swri_route_util.
+  * Add extractSubroute function.
+  * Contributors: Elliot Johnson, elliotjo
+
+ -- P. J. Reed <preed@swri.org>  Wed, 02 Aug 2017 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.3.0-1noble) noble; urgency=high
+
+  * Merge together the indigo, jade, and kinetic branches (#443 <https://github.com/swri-robotics/marti_common/issues/443>)
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 20 Jun 2017 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.2.4-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.2.3-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 09 Dec 2016 06:00:00 -0000
+
+ros-jazzy-swri-route-util (0.2.2-1noble) noble; urgency=high
+
+  * Add support for stop point metadata.
+  * Add helper method to find files within a directory and subdirectories based on regular expression matching for the filename.
+  * Add sru::projectOntoRouteWindow (#393 <https://github.com/swri-robotics/marti_common/issues/393>)
+    This is a utility function to project a point onto a window of the
+    route.
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Wed, 07 Dec 2016 06:00:00 -0000
+
+ros-jazzy-swri-route-util (0.2.1-1noble) noble; urgency=high
+
+  * Changing the order of include dirs
+    "${catkin_INCLUDE_DIRS}" needs to be listed after "include", otherwise gcc may
+    try to compile this component's cpp files using headers from a system-installed
+    version of swri_route_util.
+  * Contributors: P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.2.0-1noble) noble; urgency=high
+
+  * Add error message for non-unique route point IDs.
+  * Contributors: Elliot Johnson, P. J. Reed
+
+ -- P. J. Reed <preed@swri.org>  Tue, 21 Jun 2016 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.1.5-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.1.4-1noble) noble; urgency=high
+
+  * Fix distances in routeDistances for points before start point.
+    There were two bugs in routeDistances that were causing the incorrect
+    distance to be calculated for points before the start point.  An error
+    in the iteration bounds was causing the distance of the first point to
+    be 0.0.  Secondly, the arc length for the other points was just the
+    relative distance between two points instead of the cummulative
+    distance.
+  * Merge pull request #331 <https://github.com/evenator/marti_common/issues/331> from elliotjo/sru-add-distance-functions-jade
+    Add util functions to calculate distances between route points. (jade)
+  * Remove commented out code in swri_route_util.
+  * Add util functions to calculate distances between route points.
+    This commit adds two utility functions to calculate the distances (in
+    terms of arc length) between route points.  One function calculates
+    the distance between two points, the other calculates the distance
+    between one point and many other points and should provide much better
+    performance for that common need.
+  * Add native-ish ROS serialization support to sru::Route.
+    This commit adds native(-ish) ROS serialization support so that
+    swri_route_util::Route can be used directly with publishers and
+    subscribers. This is purely for convenience rather than performance
+    (although you will get improved performance in nodelets that
+    publish/subscribe by avoiding serialization).  Under the hood, the
+    implementation does serialization with the native type and then
+    converts it to/from the swri_route_util::Route type.
+    This commit also fixes a missing special case in
+    interpolateRouteSegment (0 < distance < 1) and reorganized the if/else
+    blocks to be clearer.
+  * Add swri_route_util package.
+    This commit adds a new package called swri_route_util that provides a
+    more user-friendly interface to the marti_nav_msgs Route and RoutPoint
+    classes, and a set of useful utilities.  At this point, most of the
+    code (except the properties) has been well tested on bag files.
+  * Fix distances in routeDistances for points before start point.
+    There were two bugs in routeDistances that were causing the incorrect
+    distance to be calculated for points before the start point.  An error
+    in the iteration bounds was causing the distance of the first point to
+    be 0.0.  Secondly, the arc length for the other points was just the
+    relative distance between two points instead of the cummulative
+    distance.
+  * Merge pull request #330 <https://github.com/evenator/marti_common/issues/330> from elliotjo/sru-add-distance-functions-indigo
+    Add util functions to calculate distances between route points. (indigo)
+  * Remove commented out code in swri_route_util.
+  * Add util functions to calculate distances between route points.
+    This commit adds two utility functions to calculate the distances (in
+    terms of arc length) between route points.  One function calculates
+    the distance between two points, the other calculates the distance
+    between one point and many other points and should provide much better
+    performance for that common need.
+  * Add native-ish ROS serialization support to sru::Route.
+    This commit adds native(-ish) ROS serialization support so that
+    swri_route_util::Route can be used directly with publishers and
+    subscribers. This is purely for convenience rather than performance
+    (although you will get improved performance in nodelets that
+    publish/subscribe by avoiding serialization).  Under the hood, the
+    implementation does serialization with the native type and then
+    converts it to/from the swri_route_util::Route type.
+    This commit also fixes a missing special case in
+    interpolateRouteSegment (0 < distance < 1) and reorganized the if/else
+    blocks to be clearer.
+  * Add swri_route_util package.
+    Adds a new package called swri_route_util that provides a
+    more user-friendly interface to the marti_nav_msgs Route and RoutPoint
+    classes, and a set of useful utilities.  At this point, most of the
+    code (except the properties) has been well tested on bag files.
+  * Contributors: Elliot Johnson, Marc Alban
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.1.3-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 06:00:00 -0000
+
+ros-jazzy-swri-route-util (0.1.2-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 06:00:00 -0000
+
+ros-jazzy-swri-route-util (0.1.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 06:00:00 -0000
+
+ros-jazzy-swri-route-util (0.1.0-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 29 Sep 2015 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.14-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 11 Apr 2017 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.13-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 23 Oct 2016 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.12-1noble) noble; urgency=high
+
+  * Changes the order of include dirs
+    "${catkin_INCLUDE_DIRS}" needs to be listed after "include", otherwise gcc may
+    try to compile this component's cpp files using headers from a system-installed
+    version of swri_route_util.
+  * Adds support for stop point metadata.
+  * Adds sru::projectOntoRouteWindow, a utility function to project a point onto a
+    window of the route.
+  * Fixes projectOntoRoute to return a normalized route coordinate
+    when the point is past the end of the route.
+  * Fixes a major bug in nearestDistanceToLineSegment that was
+    affecting projectOntoRoute.  A misnamed variable v_len was actually
+    the square of v_len and caused the reported distance along the route
+    segment to be the square of the desired answer.  Chanes the code to take the
+    appropriate square root and changes the variable name to avoid
+    confusion in the future.
+  * Adds an error check when a sru::Route rebuilds its point
+
+ -- P. J. Reed <preed@swri.org>  Sun, 14 Aug 2016 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.11-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 13 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.10-1noble) noble; urgency=high
+
+  * Contributors: Elliot Johnson
+
+ -- P. J. Reed <preed@swri.org>  Thu, 12 May 2016 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.9-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 04 Mar 2016 06:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.8-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 06 Jan 2016 06:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.7-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Wed, 18 Nov 2015 06:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.6-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Tue, 17 Nov 2015 06:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.5-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 20:27:00 -0000
+
+ros-jazzy-swri-route-util (0.0.4-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sun, 27 Sep 2015 16:35:00 -0000
+
+ros-jazzy-swri-route-util (0.0.3-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Sat, 26 Sep 2015 05:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.2-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 20:00:00 -0000
+
+ros-jazzy-swri-route-util (0.0.1-1noble) noble; urgency=high
+
+
+
+ -- P. J. Reed <preed@swri.org>  Fri, 25 Sep 2015 14:06:00 -0000
+
+
