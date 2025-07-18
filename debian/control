@@ -1,0 +1,12 @@
+Source: ros-jazzy-swri-serial-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-swri-serial-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-ros-workspace
+Description: Contains nodes and utilities for serial communication in ROS.
