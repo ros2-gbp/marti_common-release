@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>swri_geometry_util</name>
+  <version>3.8.5</version>
+  <description>
+    Commonly used geometry routines, implemented in a ROS friendly package.
+  </description>
+  <author>Marc Alban</author>
+  <maintainer email="swri-robotics@swri.org">Southwest Research Institute</maintainer>
+  <license>BSD</license>
+  <url>https://github.com/swri-robotics/marti_common</url>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>pkg-config</buildtool_depend>
+
+  <!--
+  TODO pjr Is there a ROS2 equivalent for this?  Do we still need it?
+  <depend>cmake_modules</depend>
+  -->
+  <depend>eigen</depend>
+  <depend>geos</depend>
+  <depend>libopencv-dev</depend>
+  <depend>tf2</depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
