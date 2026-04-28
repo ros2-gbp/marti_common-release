@@ -1,0 +1,12 @@
+Source: ros-rolling-swri-geometry-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, libgeos-dev, libopencv-dev, pkg-config, ros-rolling-ament-cmake, ros-rolling-ament-cmake-gtest <!nocheck>, ros-rolling-tf2, ros-rolling-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-rolling-swri-geometry-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, libgeos-dev, libopencv-dev, ros-rolling-tf2, ros-rolling-ros-workspace
+Description: Commonly used geometry routines, implemented in a ROS friendly package.
