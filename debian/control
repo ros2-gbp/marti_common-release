@@ -1,0 +1,12 @@
+Source: ros-lyrical-swri-cli-tools
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), python3-natsort, ros-lyrical-ament-copyright <!nocheck>, ros-lyrical-ament-flake8 <!nocheck>, ros-lyrical-ament-pep257 <!nocheck>, ros-lyrical-ament-xmllint <!nocheck>, ros-lyrical-marti-introspection-msgs, ros-lyrical-rcl-interfaces, ros-lyrical-rclpy, ros-lyrical-ros2cli, ros-lyrical-ros2node, ros-lyrical-ros2param, ros-lyrical-ros2topic, ros-lyrical-ros-workspace, python3-all, python3-setuptools, dh-python
+Homepage: https://index.ros.org/p/swri_cli_tools/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-swri-cli-tools
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-natsort, ros-lyrical-marti-introspection-msgs, ros-lyrical-rcl-interfaces, ros-lyrical-rclpy, ros-lyrical-ros2cli, ros-lyrical-ros2node, ros-lyrical-ros2param, ros-lyrical-ros2topic, ros-lyrical-ros-workspace
+Description: Command line tools for introspecting ROS systems
