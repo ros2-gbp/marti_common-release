@@ -1,0 +1,12 @@
+Source: ros-lyrical-swri-image-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, libopencv-dev, pkg-config, ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-gtest <!nocheck>, ros-lyrical-ament-index-cpp, ros-lyrical-camera-calibration-parsers, ros-lyrical-cv-bridge, ros-lyrical-image-geometry, ros-lyrical-image-transport, ros-lyrical-message-filters, ros-lyrical-rcl-interfaces, ros-lyrical-rclcpp, ros-lyrical-rclcpp-components, ros-lyrical-rclpy, ros-lyrical-swri-geometry-util, ros-lyrical-swri-math-util, ros-lyrical-swri-opencv-util, ros-lyrical-tf2, ros-lyrical-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-swri-image-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, libopencv-dev, ros-lyrical-ament-index-cpp, ros-lyrical-camera-calibration-parsers, ros-lyrical-cv-bridge, ros-lyrical-image-geometry, ros-lyrical-image-transport, ros-lyrical-message-filters, ros-lyrical-rcl-interfaces, ros-lyrical-rclcpp, ros-lyrical-rclcpp-components, ros-lyrical-rclpy, ros-lyrical-swri-geometry-util, ros-lyrical-swri-math-util, ros-lyrical-swri-opencv-util, ros-lyrical-tf2, ros-lyrical-ros-workspace
+Description: A package of commonly image manipulation utilities.
