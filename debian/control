@@ -1,0 +1,12 @@
+Source: ros-lyrical-swri-transform-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), libgeographiclib-dev, libgeos-dev, libopencv-dev, libproj-dev, pkg-config, ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-gtest <!nocheck>, ros-lyrical-ament-cmake-python, ros-lyrical-ament-index-cpp <!nocheck>, ros-lyrical-cv-bridge, ros-lyrical-diagnostic-msgs, ros-lyrical-diagnostic-updater, ros-lyrical-geographic-msgs, ros-lyrical-geometry-msgs, ros-lyrical-gps-msgs, ros-lyrical-launch-ros <!nocheck>, ros-lyrical-launch-testing <!nocheck>, ros-lyrical-launch-testing-ament-cmake <!nocheck>, ros-lyrical-marti-nav-msgs, ros-lyrical-rcl-interfaces, ros-lyrical-rclcpp, ros-lyrical-rclcpp-components, ros-lyrical-rclpy, ros-lyrical-sensor-msgs, ros-lyrical-swri-math-util, ros-lyrical-swri-roscpp, ros-lyrical-tf2, ros-lyrical-tf2-geometry-msgs, ros-lyrical-tf2-ros, ros-lyrical-yaml-cpp-vendor, ros-lyrical-ros-workspace
+Homepage: https://github.com/swri-robotics/marti_common
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-swri-transform-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libgeographiclib-dev, libgeos-dev, libopencv-dev, libproj-dev, python3-numpy, python3-yaml, ros-lyrical-cv-bridge, ros-lyrical-diagnostic-msgs, ros-lyrical-diagnostic-updater, ros-lyrical-geographic-msgs, ros-lyrical-geometry-msgs, ros-lyrical-gps-msgs, ros-lyrical-marti-nav-msgs, ros-lyrical-rcl-interfaces, ros-lyrical-rclcpp, ros-lyrical-rclcpp-components, ros-lyrical-rclpy, ros-lyrical-sensor-msgs, ros-lyrical-swri-math-util, ros-lyrical-swri-roscpp, ros-lyrical-tf2, ros-lyrical-tf2-geometry-msgs, ros-lyrical-tf2-ros, ros-lyrical-yaml-cpp-vendor, ros-lyrical-ros-workspace
+Description: The swri_transform_util package contains utility functions and classes for transforming between coordinate frames.
