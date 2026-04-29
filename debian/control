@@ -1,0 +1,12 @@
+Source: ros-lyrical-swri-route-util
+Section: misc
+Priority: optional
+Maintainer: Southwest Research Institute <swri-robotics@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-cmake, ros-lyrical-geometry-msgs, ros-lyrical-marti-common-msgs, ros-lyrical-marti-nav-msgs, ros-lyrical-rclcpp, ros-lyrical-swri-geometry-util, ros-lyrical-swri-math-util, ros-lyrical-swri-transform-util, ros-lyrical-tf2-geometry-msgs, ros-lyrical-visualization-msgs, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/swri_route_util/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-swri-route-util
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-geometry-msgs, ros-lyrical-marti-common-msgs, ros-lyrical-marti-nav-msgs, ros-lyrical-rclcpp, ros-lyrical-swri-geometry-util, ros-lyrical-swri-math-util, ros-lyrical-swri-transform-util, ros-lyrical-tf2-geometry-msgs, ros-lyrical-visualization-msgs, ros-lyrical-ros-workspace
+Description: This library provides functionality to simplify working with the navigation messages defined in marti_nav_msgs.
