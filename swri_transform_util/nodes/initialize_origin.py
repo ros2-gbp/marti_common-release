@@ -125,7 +125,7 @@ class OriginInitializer(rclpy.node.Node):
                 sub = self.subscribers.pop()
                 self.destroy_subscription(sub)
         except InvalidFixException as e:
-            self.get_logger().warn("%s" % str(e))
+            self.get_logger().warning("%s" % str(e))
             return
 
     def gps_callback(self, msg):
@@ -137,11 +137,17 @@ class OriginInitializer(rclpy.node.Node):
                 sub = self.subscribers.pop()
                 self.destroy_subscription(sub)
         except InvalidFixException as e:
-            self.get_logger().warn("%s" % str(e))
+            self.get_logger().warning("%s" % str(e))
             return
 
 
 if __name__ == "__main__":
     rclpy.init(args=sys.argv)
     node = OriginInitializer()
-    rclpy.spin(node)
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.try_shutdown()
