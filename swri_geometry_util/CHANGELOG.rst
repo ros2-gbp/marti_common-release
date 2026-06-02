@@ -2,6 +2,12 @@
 Changelog for package swri_geometry_util
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.9.0 (2026-06-02)
+------------------
+
+3.8.8 (2026-05-06)
+------------------
+
 3.8.7 (2025-07-18)
 ------------------
 
@@ -255,6 +261,7 @@ Changelog for package swri_geometry_util
 * Fixing Jade compilation issues
 * Fixed compile error when ros-indigo-opencv3 is installed (`#307 <https://github.com/evenator/marti_common/issues/307>`_)
 * Contributors: Kim Mathiassen
+
 0.1.3 (2016-03-04)
 ------------------
 
@@ -299,8 +306,6 @@ Changelog for package swri_geometry_util
 
 0.0.6 (2015-11-17)
 ------------------
-  Conflicts:
-  swri_geometry_util/CMakeLists.txt
 * Contributors: Kim Mathiassen, P. J. Reed
 
 0.0.5 (2015-09-27)
