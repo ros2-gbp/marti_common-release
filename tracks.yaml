@@ -256,11 +256,11 @@ tracks:
     patches: null
     release_inc: '1'
     release_repo_url: null
-    release_tag: 3.9.0
+    release_tag: 3.9.1
     ros_distro: kilted
     vcs_type: git
     vcs_uri: https://github.com/swri-robotics/marti_common.git
-    version: 3.9.0
+    version: 3.9.1
   kinetic:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
