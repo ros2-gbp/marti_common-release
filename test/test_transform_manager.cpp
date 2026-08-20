@@ -1,6 +1,6 @@
 // *****************************************************************************
 //
-// Copyright (c) 2014, Southwest Research Institute® (SwRI®)
+// Copyright (c) 2026, Southwest Research Institute® (SwRI®)
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -539,16 +539,24 @@ int main(int argc, char **argv)
 
   _node = rclcpp::Node::make_shared("transform_manager_test");
   _tf_buffer = std::make_shared<tf2_ros::Buffer>(_node->get_clock());
+  // tf2_ros 0.46.1 removed the deprecated constructor overload that accepted a
+  // Node::SharedPtr, requiring a bare node reference instead.
+#if USE_NEW_TF2_ROS_CTORS
+  _tf_listener = std::make_shared<tf2_ros::TransformListener>(*_tf_buffer, *_node);
+#else
   _tf_listener = std::make_shared<tf2_ros::TransformListener>(*_tf_buffer, _node);
+#endif
 
   _tf_manager = std::make_shared<swri_transform_util::TransformManager>(_node, _tf_buffer);
 
   // background spinner thread using main executor
+  rclcpp::executors::SingleThreadedExecutor executor;
+  executor.add_node(_node);
   std::atomic<bool> tests_done(false);
-  std::thread spinner = std::thread([&tests_done]() {
+  std::thread spinner = std::thread([&tests_done, &executor]() {
       while (not tests_done)
       {
-        rclcpp::spin_some(_node);
+        executor.spin_some();
       }
   });
 
@@ -558,6 +566,7 @@ int main(int argc, char **argv)
   {
     spinner.join();
   }
+  executor.remove_node(_node);
   rclcpp::shutdown();
   _tf_manager.reset();
   _tf_listener.reset();
