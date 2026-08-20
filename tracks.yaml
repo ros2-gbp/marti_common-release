@@ -403,10 +403,10 @@ tracks:
     - git-bloom-generate -y rosdynrpm --prefix release/:{ros_distro} :{ros_distro}
       -i :{release_inc} --require-os fedora rhel
     devel_branch: ros2-devel
-    last_version: 3.9.0
+    last_version: 3.9.1
     name: upstream
     patches: null
-    release_inc: '2'
+    release_inc: '1'
     release_repo_url: https://github.com/ros2-gbp/marti_common-release.git
     release_tag: 3.9.1
     ros_distro: rolling
