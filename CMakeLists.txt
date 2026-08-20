@@ -16,7 +16,6 @@ find_package(rcl_interfaces REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(swri_math_util REQUIRED)
-find_package(swri_roscpp REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
@@ -39,6 +38,17 @@ else()
   set(USE_NEW_TF2_TOMSG 0)
 endif()
 
+# tf2_ros 0.46.1 removed the deprecated TransformListener/TransformBroadcaster
+# constructor overloads that accepted a Node::SharedPtr, requiring a bare node
+# reference instead. Older tf2_ros releases (e.g. on Kilted) don't provide
+# tf2_ros/version.h at all, so this has to be a CMake-time check rather than a
+# runtime TF2_ROS_VERSION_GTE macro.
+if("${tf2_ros_VERSION}" VERSION_GREATER_EQUAL "0.46.1")
+  set(USE_NEW_TF2_ROS_CTORS 1)
+else()
+  set(USE_NEW_TF2_ROS_CTORS 0)
+endif()
+
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(PROJ proj)
 if(NOT "${PROJ_FOUND}")
@@ -49,7 +59,10 @@ if(NOT "${PROJ_FOUND}")
   )
 endif()
 
-# Geographiclib installs FindGeographicLib.cmake to this non-standard location
+# Geographiclib installs FindGeographicLib.cmake to this non-standard location.
+# This is needed only to build swri_transform_util itself; GeographicLib is
+# linked PRIVATE and hidden from the exported interface, so downstream packages
+# no longer need this module-path workaround.
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "/usr/share/cmake/geographiclib/")
 find_package(GeographicLib REQUIRED)
 
@@ -70,15 +83,14 @@ target_include_directories(${PROJECT_NAME}
     $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
   INTERFACE
     ${PROJ_INCLUDE_DIRS}
-  PRIVATE
-    ${swri_roscpp_TARGETS})
+)
 
 target_compile_definitions(${PROJECT_NAME}
   PUBLIC
-    USE_NEW_TF2_TOMSG=${USE_NEW_TF2_TOMSG})
+    USE_NEW_TF2_TOMSG=${USE_NEW_TF2_TOMSG}
+    USE_NEW_TF2_ROS_CTORS=${USE_NEW_TF2_ROS_CTORS})
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
-  ${GeographicLib_LIBRARIES}
   opencv_calib3d
   opencv_core
   opencv_highgui
@@ -92,6 +104,12 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   tf2_geometry_msgs::tf2_geometry_msgs
   tf2_ros::tf2_ros
   ${YAML_CPP_TARGET})
+
+# GeographicLib is an implementation detail (hidden behind a forward declaration
+# in local_xy_util.h), so link it PRIVATE. Downstream consumers no longer need
+# GeographicLib's headers or its non-standard CMake config location.
+target_link_libraries(${PROJECT_NAME} PRIVATE
+  ${GeographicLib_LIBRARIES})
 
 add_library(${PROJECT_NAME}_nodes SHARED
   src/nodes/dynamic_transform_publisher.cpp
@@ -126,7 +144,7 @@ target_link_libraries(${PROJECT_NAME}_nodes
   ${rcl_interfaces_TARGETS}
   ${rclcpp_components_TARGETS}
   ${marti_nav_msgs_TARGETS}
-  ${swri_roscpp_TARGETS})
+)
 
 add_executable(lat_lon_tf_echo src/nodes/lat_lon_tf_echo.cpp)
 target_include_directories(lat_lon_tf_echo PUBLIC
@@ -145,6 +163,7 @@ target_link_libraries(lat_lon_tf_echo PUBLIC
 
 if(BUILD_TESTING)
   find_package(ament_cmake_gtest REQUIRED)
+  find_package(ament_index_cpp REQUIRED)
   find_package(launch_testing_ament_cmake)
 
   ament_add_gtest_executable(transform_manager_test test/test_transform_manager.cpp)
@@ -173,6 +192,8 @@ if(BUILD_TESTING)
     ament_index_cpp::ament_index_cpp
     rclcpp::rclcpp
     tf2::tf2)
+  # Note: which ament_index_cpp API the test uses is selected in the source with
+  # AMENT_INDEX_CPP_VERSION_GTE from <ament_index_cpp/version.h>.
 
   ament_add_gtest(transform_util_test test/test_transform_util.cpp)
   target_link_libraries(transform_util_test
@@ -244,5 +265,5 @@ ament_export_dependencies(
   tf2_ros
   yaml_cpp_vendor
   yaml-cpp)
-ament_package(CONFIG_EXTRAS cmake/swri_transform_util-extras.cmake)
+ament_package()
 
