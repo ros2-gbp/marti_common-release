@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>swri_image_util</name>
-  <version>3.9.0</version>
+  <version>3.9.1</version>
   <description>
     A package of commonly image manipulation utilities.
   </description>
@@ -12,7 +12,6 @@
   <url>https://github.com/swri-robotics/marti_common</url>
  
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <buildtool_depend>pkg-config</buildtool_depend>
 
   <depend>ament_index_cpp</depend>
   <depend>camera_calibration_parsers</depend>
