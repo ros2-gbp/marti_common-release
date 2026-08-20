@@ -55,7 +55,7 @@ add_library(${PROJECT_NAME}_nodes SHARED
   src/nodes/image_pub_node.cpp
   src/nodes/normalization_image_node.cpp
   src/nodes/normalize_response_node.cpp
-  #src/nodes/replace_colors_node.cpp
+  src/nodes/replace_colors_node.cpp
   src/nodes/rotate_image_node.cpp
   src/nodes/scale_image_node.cpp
   src/nodes/warp_image_node.cpp)
@@ -71,7 +71,7 @@ rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::DummyIm
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::ImagePubNode")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::NormalizationImageNode")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::NormalizeResponseNode")
-# rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::ReplaceColorsNode")
+rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::ReplaceColorsNode")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::RotateImageNode")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::ScaleImageNode")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_image_util::WarpImageNode")
@@ -90,6 +90,15 @@ target_link_libraries(${PROJECT_NAME}_nodes PRIVATE
 # Iron and later switched some cv_bridge files to .hpp from .h
 if ("${cv_bridge_VERSION}" VERSION_LESS "3.3.0")
   target_compile_definitions(${PROJECT_NAME}_nodes PRIVATE "-DUSE_CVBRIDGE_H_FILES")
+endif()
+
+# The image_transport::RequiredInterfaces (NodeInterfaces) + rclcpp::QoS API was
+# introduced in image_transport 6.4.0. Older versions only provide the legacy
+# (rclcpp::Node *, rmw_qos_profile_t) API, so compile the legacy code path for
+# them. Newer versions fall through to the default path and use the current,
+# non-deprecated API.
+if ("${image_transport_VERSION}" VERSION_LESS "6.4.0")
+  target_compile_definitions(${PROJECT_NAME}_nodes PRIVATE "-DUSE_LEGACY_IMAGE_TRANSPORT_API")
 endif()
 
 if(BUILD_TESTING)
