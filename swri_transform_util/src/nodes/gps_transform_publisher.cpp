@@ -1,6 +1,6 @@
 // *****************************************************************************
 //
-// Copyright (c) 2018, Southwest Research Institute® (SwRI®)
+// Copyright (c) 2026, Southwest Research Institute® (SwRI®)
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -38,7 +38,7 @@
 #include <swri_transform_util/frames.h>
 #include <swri_transform_util/transform_manager.h>
 #include <tf2/transform_datatypes.hpp>
-#include <tf2_ros/transform_broadcaster.h>
+#include <tf2_ros/transform_broadcaster.hpp>
 
 namespace swri_transform_util
 {
@@ -80,13 +80,23 @@ namespace swri_transform_util
     tf_manager_ = std::make_shared<swri_transform_util::TransformManager>(shared_from_this());
     tf_buf_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
     tf_buf_->setUsingDedicatedThread(true);
+    // tf2_ros 0.46.1 removed the deprecated constructor overload that accepted a
+    // Node::SharedPtr, requiring a bare node reference instead.
+#if USE_NEW_TF2_ROS_CTORS
+    tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buf_, *this, false);
+#else
     tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buf_, shared_from_this(), false);
+#endif
     tf_manager_->Initialize(tf_buf_);
   }
 
   void GpsTransformPublisher::InitTransformBroadcaster()
   {
+#if USE_NEW_TF2_ROS_CTORS
+    tf_ = std::make_shared<tf2_ros::TransformBroadcaster>(*this);
+#else
     tf_ = std::make_shared<tf2_ros::TransformBroadcaster>(shared_from_this());
+#endif
   }
 
   void GpsTransformPublisher::HandleGps(const gps_msgs::msg::GPSFix::UniquePtr gps_fix)
