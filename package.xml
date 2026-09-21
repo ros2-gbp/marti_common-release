@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>swri_geometry_util</name>
-  <version>3.11.0</version>
+  <version>3.12.0</version>
   <description>
     Commonly used geometry routines, implemented in a ROS friendly package.
   </description>
@@ -13,7 +13,8 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>eigen</depend>
+  <build_depend>eigen</build_depend>
+
   <depend>geos</depend>
   <depend>libopencv-dev</depend>
   <depend>tf2</depend>
