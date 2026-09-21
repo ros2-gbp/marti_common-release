@@ -1,17 +1,15 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.14.4)
 project(swri_transform_util)
 
 set(CMAKE_CXX_STANDARD 17)
 
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
-find_package(diagnostic_msgs REQUIRED)
-find_package(diagnostic_updater REQUIRED)
 find_package(geographic_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(gps_msgs REQUIRED)
 find_package(marti_nav_msgs REQUIRED)
-find_package(OpenCV REQUIRED calib3d core highgui imgproc video)
+find_package(OpenCV REQUIRED calib3d core imgproc video)
 find_package(rcl_interfaces REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_components REQUIRED)
@@ -93,7 +91,6 @@ target_compile_definitions(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME} PUBLIC
   opencv_calib3d
   opencv_core
-  opencv_highgui
   opencv_imgproc
   opencv_video
   ${PROJ_LIBRARIES}
@@ -125,25 +122,19 @@ target_include_directories(${PROJECT_NAME}_nodes
   INTERFACE
     ${PROJ_INCLUDE_DIRS})
 
-target_compile_definitions(${PROJECT_NAME}
-  PUBLIC "${TF_UTIL_DEFINITIONS}")
-
-target_compile_definitions(${PROJECT_NAME}_nodes
-  PRIVATE "${TF_UTIL_DEFINITIONS}")
-
 target_compile_definitions(${PROJECT_NAME}_nodes
   PRIVATE "COMPOSITION_BUILDING_DLL")
 
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_transform_util::DynamicTransformPublisher")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_transform_util::GpsTransformPublisher")
 rclcpp_components_register_nodes(${PROJECT_NAME}_nodes "swri_transform_util::ObstacleTransformer")
-target_link_libraries(${PROJECT_NAME}_nodes
+target_link_libraries(${PROJECT_NAME}_nodes PRIVATE
   ${PROJECT_NAME}
   ${geographic_msgs_TARGETS}
   ${gps_msgs_TARGETS}
+  ${marti_nav_msgs_TARGETS}
   ${rcl_interfaces_TARGETS}
   ${rclcpp_components_TARGETS}
-  ${marti_nav_msgs_TARGETS}
 )
 
 add_executable(lat_lon_tf_echo src/nodes/lat_lon_tf_echo.cpp)
@@ -156,7 +147,7 @@ target_include_directories(lat_lon_tf_echo
   INTERFACE
   ${PROJ_INCLUDE_DIRS})
 
-target_link_libraries(lat_lon_tf_echo PUBLIC
+target_link_libraries(lat_lon_tf_echo PRIVATE
   ${PROJECT_NAME}
   ${geographic_msgs_TARGETS}
   ${gps_msgs_TARGETS})
@@ -266,7 +257,6 @@ install(PROGRAMS nodes/initialize_origin.py
 
 ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
 ament_python_install_package(${PROJECT_NAME})
-ament_export_definitions("${TF_UTIL_DEFINITIONS}")
 ament_export_dependencies(
   ament_cmake
   geometry_msgs
